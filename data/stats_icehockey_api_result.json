@@ -1,0 +1,606 @@
+{
+    "status": "OK",
+    "recordCount": 5,
+    "startTimestamp": "2016-11-18T06:10:01.1677052Z",
+    "endTimestamp": "2016-11-18T06:10:01.1677052Z",
+    "timeTaken": 0.0,
+    "apiResults": [{
+        "sportId": 3,
+        "name": "Hockey",
+        "league": {
+            "leagueId": 18,
+            "name": "National Hockey League",
+            "abbreviation": "NHL",
+            "displayName": "National Hockey League",
+            "season": {
+                "season": 2016,
+                "name": "2016-17 NHL Season",
+                "isActive": true,
+                "eventType": [{
+                    "eventTypeId": 1,
+                    "name": "Regular Season",
+                    "events": [{
+                        "eventId": 1646729,
+                        "startDate": [{
+                            "year": 2016,
+                            "month": 11,
+                            "date": 18,
+                            "hour": 19,
+                            "minute": 0,
+                            "full": "2016-11-18T19:00:00",
+                            "dateType": "Local"
+                        }, {
+                            "year": 2016,
+                            "month": 11,
+                            "date": 19,
+                            "hour": 0,
+                            "minute": 0,
+                            "full": "2016-11-19T00:00:00",
+                            "dateType": "UTC"
+                        }],
+                        "isTba": false,
+                        "isDataConfirmed": {
+                            "score": false
+                        },
+                        "eventStatus": {
+                            "isUnderReview": false,
+                            "isPenaltyShot": false,
+                            "eventStatusId": 1,
+                            "isActive": false,
+                            "name": "Pre-Game"
+                        },
+                        "venue": {
+                            "venueId": 3259,
+                            "name": "Nationwide Arena",
+                            "city": "Columbus",
+                            "state": {
+                                "stateId": 35,
+                                "name": "Ohio",
+                                "abbreviation": "OH"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        },
+                        "tvStations": [{
+                            "tvStationId": 858,
+                            "name": "FOX Sports Ohio",
+                            "callLetters": "FSOH",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "tvStationId": 130,
+                            "name": "MSG",
+                            "callLetters": "MSG",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }],
+                        "teams": [{
+                            "teamId": 4982,
+                            "location": "Columbus",
+                            "nickname": "Blue Jackets",
+                            "abbreviation": "Cls",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 1,
+                                "name": "home"
+                            },
+                            "record": {
+                                "wins": 8,
+                                "losses": 4,
+                                "overtimeLosses": 2
+                            },
+                            "isWinner": false
+                        }, {
+                            "teamId": 4966,
+                            "location": "New York",
+                            "nickname": "Rangers",
+                            "abbreviation": "NYR",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 2,
+                                "name": "away"
+                            },
+                            "record": {
+                                "wins": 13,
+                                "losses": 4,
+                                "overtimeLosses": 0
+                            },
+                            "isWinner": false
+                        }],
+                        "coverageLevel": {
+                            "coverageLevelId": 1,
+                            "details": "STATS Feed",
+                            "name": "Level 2"
+                        }
+                    }, {
+                        "eventId": 1646723,
+                        "startDate": [{
+                            "year": 2016,
+                            "month": 11,
+                            "date": 18,
+                            "hour": 19,
+                            "minute": 0,
+                            "full": "2016-11-18T19:00:00",
+                            "dateType": "Local"
+                        }, {
+                            "year": 2016,
+                            "month": 11,
+                            "date": 19,
+                            "hour": 0,
+                            "minute": 0,
+                            "full": "2016-11-19T00:00:00",
+                            "dateType": "UTC"
+                        }],
+                        "isTba": false,
+                        "isDataConfirmed": {
+                            "score": false
+                        },
+                        "eventStatus": {
+                            "isUnderReview": false,
+                            "isPenaltyShot": false,
+                            "eventStatusId": 1,
+                            "isActive": false,
+                            "name": "Pre-Game"
+                        },
+                        "venue": {
+                            "venueId": 10615,
+                            "name": "Barclays Center",
+                            "city": "Brooklyn",
+                            "state": {
+                                "stateId": 32,
+                                "name": "New York",
+                                "abbreviation": "NY"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        },
+                        "tvStations": [{
+                            "tvStationId": 885,
+                            "name": "MSG-Plus",
+                            "callLetters": "MSG+",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "tvStationId": 910,
+                            "name": "ROOT Sports Pittsburgh",
+                            "callLetters": "ROOT",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "tvStationId": 716,
+                            "name": "Rogers SportsNet",
+                            "callLetters": "RSN",
+                            "networkType": {
+                                "networkTypeId": 1,
+                                "name": "National"
+                            },
+                            "country": {
+                                "countryId": 2,
+                                "name": "Canada",
+                                "abbreviation": "CAN"
+                            }
+                        }, {
+                            "tvStationId": 914,
+                            "name": "TVA",
+                            "callLetters": "TVA",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 2,
+                                "name": "Canada",
+                                "abbreviation": "CAN"
+                            }
+                        }],
+                        "teams": [{
+                            "teamId": 4965,
+                            "location": "New York",
+                            "nickname": "Islanders",
+                            "abbreviation": "NYI",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 1,
+                                "name": "home"
+                            },
+                            "record": {
+                                "wins": 5,
+                                "losses": 8,
+                                "overtimeLosses": 3
+                            },
+                            "isWinner": false
+                        }, {
+                            "teamId": 4969,
+                            "location": "Pittsburgh",
+                            "nickname": "Penguins",
+                            "abbreviation": "Pit",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 2,
+                                "name": "away"
+                            },
+                            "record": {
+                                "wins": 10,
+                                "losses": 4,
+                                "overtimeLosses": 2
+                            },
+                            "isWinner": false
+                        }],
+                        "coverageLevel": {
+                            "coverageLevelId": 1,
+                            "details": "STATS Feed",
+                            "name": "Level 2"
+                        }
+                    }, {
+                        "eventId": 1646726,
+                        "startDate": [{
+                            "year": 2016,
+                            "month": 11,
+                            "date": 18,
+                            "hour": 19,
+                            "minute": 0,
+                            "full": "2016-11-18T19:00:00",
+                            "dateType": "Local"
+                        }, {
+                            "year": 2016,
+                            "month": 11,
+                            "date": 19,
+                            "hour": 0,
+                            "minute": 0,
+                            "full": "2016-11-19T00:00:00",
+                            "dateType": "UTC"
+                        }],
+                        "isTba": false,
+                        "isDataConfirmed": {
+                            "score": false
+                        },
+                        "eventStatus": {
+                            "isUnderReview": false,
+                            "isPenaltyShot": false,
+                            "eventStatusId": 1,
+                            "isActive": false,
+                            "name": "Pre-Game"
+                        },
+                        "venue": {
+                            "venueId": 27,
+                            "name": "Verizon Center",
+                            "city": "Washington",
+                            "state": {
+                                "stateId": 51,
+                                "name": "District of Columbia",
+                                "abbreviation": "DC"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        },
+                        "tvStations": [{
+                            "tvStationId": 871,
+                            "name": "Comcast SportsNet Mid-Atlantic",
+                            "callLetters": "CSMA",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "tvStationId": 906,
+                            "name": "FOX Sports Detroit Plus",
+                            "callLetters": "FDT+",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }],
+                        "teams": [{
+                            "teamId": 4976,
+                            "location": "Washington",
+                            "nickname": "Capitals",
+                            "abbreviation": "Was",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 1,
+                                "name": "home"
+                            },
+                            "record": {
+                                "wins": 10,
+                                "losses": 4,
+                                "overtimeLosses": 2
+                            },
+                            "isWinner": false
+                        }, {
+                            "teamId": 4958,
+                            "location": "Detroit",
+                            "nickname": "Red Wings",
+                            "abbreviation": "Det",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 2,
+                                "name": "away"
+                            },
+                            "record": {
+                                "wins": 8,
+                                "losses": 8,
+                                "overtimeLosses": 1
+                            },
+                            "isWinner": false
+                        }],
+                        "coverageLevel": {
+                            "coverageLevelId": 1,
+                            "details": "STATS Feed",
+                            "name": "Level 2"
+                        }
+                    }, {
+                        "eventId": 1646734,
+                        "startDate": [{
+                            "year": 2016,
+                            "month": 11,
+                            "date": 18,
+                            "hour": 19,
+                            "minute": 30,
+                            "full": "2016-11-18T19:30:00",
+                            "dateType": "Local"
+                        }, {
+                            "year": 2016,
+                            "month": 11,
+                            "date": 19,
+                            "hour": 0,
+                            "minute": 30,
+                            "full": "2016-11-19T00:30:00",
+                            "dateType": "UTC"
+                        }],
+                        "isTba": false,
+                        "isDataConfirmed": {
+                            "score": false
+                        },
+                        "eventStatus": {
+                            "isUnderReview": false,
+                            "isPenaltyShot": false,
+                            "eventStatusId": 1,
+                            "isActive": false,
+                            "name": "Pre-Game"
+                        },
+                        "venue": {
+                            "venueId": 2137,
+                            "name": "PNC Arena",
+                            "city": "Raleigh",
+                            "state": {
+                                "stateId": 33,
+                                "name": "North Carolina",
+                                "abbreviation": "NC"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        },
+                        "tvStations": [{
+                            "tvStationId": 146,
+                            "name": "RDS",
+                            "callLetters": "RDS",
+                            "networkType": {
+                                "networkTypeId": 1,
+                                "name": "National"
+                            },
+                            "country": {
+                                "countryId": 2,
+                                "name": "Canada",
+                                "abbreviation": "CAN"
+                            }
+                        }, {
+                            "tvStationId": 892,
+                            "name": "FOX Sports Carolinas",
+                            "callLetters": "FSCR",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "tvStationId": 894,
+                            "name": "Rogers Sportsnet East",
+                            "callLetters": "RSNE",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 2,
+                                "name": "Canada",
+                                "abbreviation": "CAN"
+                            }
+                        }],
+                        "teams": [{
+                            "teamId": 4960,
+                            "location": "Carolina",
+                            "nickname": "Hurricanes",
+                            "abbreviation": "Car",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 1,
+                                "name": "home"
+                            },
+                            "record": {
+                                "wins": 5,
+                                "losses": 6,
+                                "overtimeLosses": 4
+                            },
+                            "isWinner": false
+                        }, {
+                            "teamId": 4963,
+                            "location": "Montreal",
+                            "nickname": "Canadiens",
+                            "abbreviation": "Mon",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 2,
+                                "name": "away"
+                            },
+                            "record": {
+                                "wins": 13,
+                                "losses": 2,
+                                "overtimeLosses": 2
+                            },
+                            "isWinner": false
+                        }],
+                        "coverageLevel": {
+                            "coverageLevelId": 1,
+                            "details": "STATS Feed",
+                            "name": "Level 2"
+                        }
+                    }, {
+                        "eventId": 1646738,
+                        "startDate": [{
+                            "year": 2016,
+                            "month": 11,
+                            "date": 18,
+                            "hour": 19,
+                            "minute": 0,
+                            "full": "2016-11-18T19:00:00",
+                            "dateType": "Local"
+                        }, {
+                            "year": 2016,
+                            "month": 11,
+                            "date": 19,
+                            "hour": 2,
+                            "minute": 0,
+                            "full": "2016-11-19T02:00:00",
+                            "dateType": "UTC"
+                        }],
+                        "isTba": false,
+                        "isDataConfirmed": {
+                            "score": false
+                        },
+                        "eventStatus": {
+                            "isUnderReview": false,
+                            "isPenaltyShot": false,
+                            "eventStatusId": 1,
+                            "isActive": false,
+                            "name": "Pre-Game"
+                        },
+                        "venue": {
+                            "venueId": 3229,
+                            "name": "Scotiabank Saddledome",
+                            "city": "Calgary",
+                            "state": {
+                                "stateId": 52,
+                                "name": "Alberta",
+                                "abbreviation": "AB"
+                            },
+                            "country": {
+                                "countryId": 2,
+                                "name": "Canada",
+                                "abbreviation": "CAN"
+                            }
+                        },
+                        "tvStations": [{
+                            "tvStationId": 855,
+                            "name": "Rogerts Sportsnet West",
+                            "callLetters": "RSNW",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 2,
+                                "name": "Canada",
+                                "abbreviation": "CAN"
+                            }
+                        }, {
+                            "tvStationId": 856,
+                            "name": "Comcast SportsNet Chicago",
+                            "callLetters": "CSNC",
+                            "networkType": {
+                                "networkTypeId": 2,
+                                "name": "Regional"
+                            },
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }],
+                        "teams": [{
+                            "teamId": 4956,
+                            "location": "Calgary",
+                            "nickname": "Flames",
+                            "abbreviation": "Cgy",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 1,
+                                "name": "home"
+                            },
+                            "record": {
+                                "wins": 7,
+                                "losses": 10,
+                                "overtimeLosses": 1
+                            },
+                            "isWinner": false
+                        }, {
+                            "teamId": 4957,
+                            "location": "Chicago",
+                            "nickname": "Blackhawks",
+                            "abbreviation": "Chi",
+                            "teamLocationType": {
+                                "teamLocationTypeId": 2,
+                                "name": "away"
+                            },
+                            "record": {
+                                "wins": 11,
+                                "losses": 4,
+                                "overtimeLosses": 2
+                            },
+                            "isWinner": false
+                        }],
+                        "coverageLevel": {
+                            "coverageLevelId": 1,
+                            "details": "STATS Feed",
+                            "name": "Level 2"
+                        }
+                    }]
+                }]
+            }
+        }
+    }]
+}

@@ -1,0 +1,949 @@
+{
+	"status": "OK",
+	"recordCount": 133,
+	"startTimestamp": "2016-11-04T04:56:10.3479425Z",
+	"endTimestamp": "2016-11-04T04:56:10.3635672Z",
+	"timeTaken": 0.0156247,
+	"apiResults": [{
+		"sportId": 3,
+		"name": "Hockey",
+		"league": {
+			"leagueId": 18,
+			"name": "National Hockey League",
+			"abbreviation": "NHL",
+			"displayName": "National Hockey League",
+			"playEvents": [{
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 619,
+					"name": "TV Timeout"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 621,
+					"name": "Fight"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 622,
+					"name": "Penalty Shot"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 623,
+					"name": "Replay Being Examined"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 624,
+					"name": "Other Stoppage"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 625,
+					"name": "Puck Frozen by Goalie"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 601,
+					"name": "Offside"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 602,
+					"name": "Icing"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 603,
+					"name": "Injured Player"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 604,
+					"name": "Rink Repair"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 605,
+					"name": "Clock Problem"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 606,
+					"name": "Frozen Puck"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 607,
+					"name": "Puck in Netting/Crowd"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 608,
+					"name": "Puck Caught by Goalie"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 609,
+					"name": "Net Dislodged"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 610,
+					"name": "Referee"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 611,
+					"name": "High Stick"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 612,
+					"name": "Rink/Ice Maintenance"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 613,
+					"name": "Objects on Ice"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 614,
+					"name": "Hand Pass"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 615,
+					"name": "Time Out - Home"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 616,
+					"name": "Time Out - Visitor"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 617,
+					"name": "Premature Substitution"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 618,
+					"name": "Puck on Net"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 620,
+					"name": "Puck in Bench"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 626,
+					"name": "Penalty"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 627,
+					"name": "Early Intermission"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 628,
+					"name": "Coach's Challenge"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 516,
+				"playDetail": {
+					"playDetailId": 629,
+					"name": "Penalty Shot Awarded"
+				},
+				"name": "Stoppage"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 45,
+					"name": "Butt Ending Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 15,
+					"name": "Misconduct"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 54,
+					"name": "Illegal Substitution"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 0,
+					"name": "Objects on Ice"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 71,
+					"name": "Interference - Maj."
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 40,
+					"name": "Illegal Stick"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 32,
+					"name": "Delay Of Game"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 56,
+					"name": "Clipping Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 26,
+					"name": "Check from Behind Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 36,
+					"name": "Elbowing Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 22,
+					"name": "Spearing Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 60,
+					"name": "Match-Deliberate Injury"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 8,
+					"name": "Interference"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 19,
+					"name": "Boarding"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 21,
+					"name": "Closing Hand on Puck"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 62,
+					"name": "Instigator-Face Shield"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 45,
+					"name": "Butt Ending"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 43,
+					"name": "Third man in fight"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 47,
+					"name": "Penalty Shot"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 72,
+					"name": "Face-off Violation"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 30,
+					"name": "Boarding Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 66,
+					"name": "Hooking Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 28,
+					"name": "Bench"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 59,
+					"name": "Abuse of Officials"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 70,
+					"name": "Unsportsmanlike Conduct-Coach"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 14,
+					"name": "Instigator"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 46,
+					"name": "Throwing Stick"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 52,
+					"name": "Obstruction-hooking"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 76,
+					"name": "Concealing puck"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 61,
+					"name": "Abusive Language"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 32,
+					"name": "Delay of Game"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 11,
+					"name": "Charging"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 67,
+					"name": "Head-butting"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 38,
+					"name": "Freezing the Puck"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 35,
+					"name": "Match"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 55,
+					"name": "Match--attempt to injure"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 74,
+					"name": "Illegal Check to the Head Minor"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 37,
+					"name": "Cross Checking Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 6,
+					"name": "Fighting"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 41,
+					"name": "Gross Misconduct"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 23,
+					"name": "Leaving the Crease"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 5,
+					"name": "High-sticking"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 13,
+					"name": "Holding"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 57,
+					"name": "Removing Sweater"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 24,
+					"name": "Checking from Behind"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 27,
+					"name": "Attempting to Spear"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 31,
+					"name": "Playing with Broken Stick"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 77,
+					"name": "Player Leaves Bench"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 73,
+					"name": "Illegal Check to the Head Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 39,
+					"name": "Charging Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 17,
+					"name": "Game Misconduct"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 68,
+					"name": "Abuse of Officials Misconduct"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 69,
+					"name": "Broken Stick"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 58,
+					"name": "Diving"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 1,
+					"name": "Slashing"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 29,
+					"name": "Spearing"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 9,
+					"name": "Unsportsmanlike Conduct"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 44,
+					"name": "Butt-ending"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 50,
+					"name": "Obstruction-tripping"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 51,
+					"name": "Obstruction-interference"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 53,
+					"name": "Obstruction-stick holding"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 78,
+					"name": "Targeting the Head"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 64,
+					"name": "Head Butting Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 33,
+					"name": "Kneeing Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 34,
+					"name": "Slashing Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 16,
+					"name": "Too Many Men"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 18,
+					"name": "Cross-checking"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 3,
+					"name": "Elbowing"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 48,
+					"name": "Clipping"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 2,
+					"name": "Hooking"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 10,
+					"name": "Roughing"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 7,
+					"name": "Tripping"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 75,
+					"name": "Embellishment"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 4,
+					"name": "High Stick Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 49,
+					"name": "Obstruction-holding"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 12,
+					"name": "Stick Holding"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 20,
+					"name": "Kneeing"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 25,
+					"name": "Goaltender Interference"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 63,
+					"name": "Throwing Stick Major"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": 509,
+				"playDetail": {
+					"playDetailId": 42,
+					"name": "Roughing"
+				},
+				"name": "Penalty"
+			}, {
+				"playEventId": -97,
+				"playDetail": {
+					"playDetailId": 0,
+					"name": "Not Applicable"
+				},
+				"name": "Penalty Shot Miss"
+			}, {
+				"playEventId": -97,
+				"playDetail": {
+					"playDetailId": 901,
+					"name": "Regular Shot"
+				},
+				"name": "Penalty Shot Miss"
+			}, {
+				"playEventId": -97,
+				"playDetail": {
+					"playDetailId": 902,
+					"name": "Penalty Shot"
+				},
+				"name": "Penalty Shot Miss"
+			}, {
+				"playEventId": -97,
+				"playDetail": {
+					"playDetailId": 903,
+					"name": "Empty Net"
+				},
+				"name": "Penalty Shot Miss"
+			}, {
+				"playEventId": -97,
+				"playDetail": {
+					"playDetailId": 904,
+					"name": "No Shot On Goal"
+				},
+				"name": "Penalty Shot Miss"
+			}, {
+				"playEventId": 505,
+				"playDetail": {
+					"playDetailId": 0,
+					"name": "Not Applicable"
+				},
+				"name": "Goal"
+			}, {
+				"playEventId": 505,
+				"playDetail": {
+					"playDetailId": 901,
+					"name": "Regular Shot"
+				},
+				"name": "Goal"
+			}, {
+				"playEventId": 505,
+				"playDetail": {
+					"playDetailId": 902,
+					"name": "Penalty Shot"
+				},
+				"name": "Goal"
+			}, {
+				"playEventId": 505,
+				"playDetail": {
+					"playDetailId": 903,
+					"name": "Empty Net"
+				},
+				"name": "Goal"
+			}, {
+				"playEventId": 505,
+				"playDetail": {
+					"playDetailId": 904,
+					"name": "No Shot On Goal"
+				},
+				"name": "Goal"
+			}, {
+				"playEventId": 506,
+				"playDetail": {
+					"playDetailId": 0,
+					"name": "Not Applicable"
+				},
+				"name": "Shot"
+			}, {
+				"playEventId": 506,
+				"playDetail": {
+					"playDetailId": 901,
+					"name": "Regular Shot"
+				},
+				"name": "Shot"
+			}, {
+				"playEventId": 506,
+				"playDetail": {
+					"playDetailId": 902,
+					"name": "Penalty Shot"
+				},
+				"name": "Shot"
+			}, {
+				"playEventId": 506,
+				"playDetail": {
+					"playDetailId": 903,
+					"name": "Empty Net"
+				},
+				"name": "Shot"
+			}, {
+				"playEventId": 506,
+				"playDetail": {
+					"playDetailId": 904,
+					"name": "No Shot On Goal"
+				},
+				"name": "Shot"
+			}, {
+				"playEventId": 507,
+				"playDetail": {
+					"playDetailId": 0,
+					"name": "Not Applicable"
+				},
+				"name": "Miss"
+			}, {
+				"playEventId": 507,
+				"playDetail": {
+					"playDetailId": 901,
+					"name": "Regular Shot"
+				},
+				"name": "Miss"
+			}, {
+				"playEventId": 507,
+				"playDetail": {
+					"playDetailId": 902,
+					"name": "Penalty Shot"
+				},
+				"name": "Miss"
+			}, {
+				"playEventId": 507,
+				"playDetail": {
+					"playDetailId": 903,
+					"name": "Empty Net"
+				},
+				"name": "Miss"
+			}, {
+				"playEventId": 507,
+				"playDetail": {
+					"playDetailId": 904,
+					"name": "No Shot On Goal"
+				},
+				"name": "Miss"
+			}, {
+				"playEventId": 503,
+				"playDetail": {
+					"playDetailId": 10003,
+					"name": "Committed"
+				},
+				"name": "Hit"
+			}, {
+				"playEventId": 502,
+				"playDetail": {
+					"playDetailId": 10001,
+					"name": "Won"
+				},
+				"name": "Faceoff"
+			}, {
+				"playEventId": 11,
+				"playDetail": {
+					"playDetailId": 10006,
+					"name": "Goal"
+				},
+				"name": "Shootout"
+			}, {
+				"playEventId": 11,
+				"playDetail": {
+					"playDetailId": 10007,
+					"name": "Miss"
+				},
+				"name": "Shootout"
+			}]
+		}
+	}]
+}

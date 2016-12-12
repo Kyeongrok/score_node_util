@@ -1,0 +1,826 @@
+{
+    "status": "OK",
+    "recordCount": 32,
+    "startTimestamp": "2016-10-28T03:49:56.519231Z",
+    "endTimestamp": "2016-10-28T03:49:57.097356Z",
+    "timeTaken": 0.578125,
+    "apiResults": [{
+        "sportId": 1,
+        "name": "Basketball",
+        "league": {
+            "leagueId": 1,
+            "name": "National Basketball Assoc.",
+            "abbreviation": "NBA",
+            "displayName": "National Basketball Assoc.",
+            "season": {
+                "season": 2016,
+                "name": "2016-17 NBA Season",
+                "isActive": true,
+                "conferences": [{
+                    "conferenceId": 1,
+                    "name": "Eastern Conference",
+                    "abbreviation": "Eastern",
+                    "divisions": [{
+                        "divisionId": 1,
+                        "name": "Atlantic Division",
+                        "abbreviation": "Atlantic",
+                        "teams": [{
+                            "venue": {
+                                "venueId": 2,
+                                "name": "TD Garden",
+                                "city": "Boston",
+                                "state": {
+                                    "stateId": 21,
+                                    "name": "Massachusetts",
+                                    "abbreviation": "MA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 2,
+                            "location": "Boston",
+                            "nickname": "Celtics",
+                            "abbreviation": "Bos",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 10615,
+                                "name": "Barclays Center",
+                                "city": "Brooklyn",
+                                "state": {
+                                    "stateId": 32,
+                                    "name": "New York",
+                                    "abbreviation": "NY"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 17,
+                            "location": "Brooklyn",
+                            "nickname": "Nets",
+                            "abbreviation": "Bkn",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 18,
+                                "name": "Madison Square Garden",
+                                "city": "New York",
+                                "state": {
+                                    "stateId": 32,
+                                    "name": "New York",
+                                    "abbreviation": "NY"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 18,
+                            "location": "New York",
+                            "nickname": "Knicks",
+                            "abbreviation": "NY",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 20,
+                                "name": "Wells Fargo Center",
+                                "city": "Philadelphia",
+                                "state": {
+                                    "stateId": 38,
+                                    "name": "Pennsylvania",
+                                    "abbreviation": "PA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 20,
+                            "location": "Philadelphia",
+                            "nickname": "76ers",
+                            "abbreviation": "Phi",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 28,
+                                "name": "Air Canada Centre",
+                                "city": "Toronto",
+                                "state": {
+                                    "stateId": 60,
+                                    "name": "Ontario",
+                                    "abbreviation": "ON"
+                                },
+                                "country": {
+                                    "countryId": 2,
+                                    "name": "Canada",
+                                    "abbreviation": "CAN"
+                                }
+                            },
+                            "teamId": 28,
+                            "location": "Toronto",
+                            "nickname": "Raptors",
+                            "abbreviation": "Tor",
+                            "country": {
+                                "countryId": 2,
+                                "name": "Canada",
+                                "abbreviation": "CAN"
+                            }
+                        }]
+                    }, {
+                        "divisionId": 2,
+                        "name": "Central Division",
+                        "abbreviation": "Central",
+                        "teams": [{
+                            "venue": {
+                                "venueId": 4,
+                                "name": "United Center",
+                                "city": "Chicago",
+                                "state": {
+                                    "stateId": 13,
+                                    "name": "Illinois",
+                                    "abbreviation": "IL"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 4,
+                            "location": "Chicago",
+                            "nickname": "Bulls",
+                            "abbreviation": "Chi",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 5,
+                                "name": "Quicken Loans Arena",
+                                "city": "Cleveland",
+                                "state": {
+                                    "stateId": 35,
+                                    "name": "Ohio",
+                                    "abbreviation": "OH"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 5,
+                            "location": "Cleveland",
+                            "nickname": "Cavaliers",
+                            "abbreviation": "Cle",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 8,
+                                "name": "The Palace of Auburn Hills",
+                                "city": "Auburn Hills",
+                                "state": {
+                                    "stateId": 22,
+                                    "name": "Michigan",
+                                    "abbreviation": "MI"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 8,
+                            "location": "Detroit",
+                            "nickname": "Pistons",
+                            "abbreviation": "Det",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 11,
+                                "name": "Bankers Life Fieldhouse",
+                                "city": "Indianapolis",
+                                "state": {
+                                    "stateId": 14,
+                                    "name": "Indiana",
+                                    "abbreviation": "IN"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 11,
+                            "location": "Indiana",
+                            "nickname": "Pacers",
+                            "abbreviation": "Ind",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 15,
+                                "name": "BMO Harris Bradley Center",
+                                "city": "Milwaukee",
+                                "state": {
+                                    "stateId": 49,
+                                    "name": "Wisconsin",
+                                    "abbreviation": "WI"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 15,
+                            "location": "Milwaukee",
+                            "nickname": "Bucks",
+                            "abbreviation": "Mil",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }]
+                    }, {
+                        "divisionId": 5,
+                        "name": "Southeast Division",
+                        "abbreviation": "Southeast",
+                        "teams": [{
+                            "venue": {
+                                "venueId": 1,
+                                "name": "Philips Arena",
+                                "city": "Atlanta",
+                                "state": {
+                                    "stateId": 10,
+                                    "name": "Georgia",
+                                    "abbreviation": "GA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 1,
+                            "location": "Atlanta",
+                            "nickname": "Hawks",
+                            "abbreviation": "Atl",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 4630,
+                                "name": "Spectrum Center",
+                                "city": "Charlotte",
+                                "state": {
+                                    "stateId": 33,
+                                    "name": "North Carolina",
+                                    "abbreviation": "NC"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 5312,
+                            "location": "Charlotte",
+                            "nickname": "Hornets",
+                            "abbreviation": "Cha",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 14,
+                                "name": "AmericanAirlines Arena",
+                                "city": "Miami",
+                                "state": {
+                                    "stateId": 9,
+                                    "name": "Florida",
+                                    "abbreviation": "FL"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 14,
+                            "location": "Miami",
+                            "nickname": "Heat",
+                            "abbreviation": "Mia",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 9545,
+                                "name": "Amway Center",
+                                "city": "Orlando",
+                                "state": {
+                                    "stateId": 9,
+                                    "name": "Florida",
+                                    "abbreviation": "FL"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 19,
+                            "location": "Orlando",
+                            "nickname": "Magic",
+                            "abbreviation": "Orl",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 27,
+                                "name": "Verizon Center",
+                                "city": "Washington",
+                                "state": {
+                                    "stateId": 51,
+                                    "name": "District of Columbia",
+                                    "abbreviation": "DC"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 27,
+                            "location": "Washington",
+                            "nickname": "Wizards",
+                            "abbreviation": "Was",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }]
+                    }]
+                }, {
+                    "conferenceId": 2,
+                    "name": "Western Conference",
+                    "abbreviation": "Western",
+                    "divisions": [{
+                        "divisionId": 4,
+                        "name": "Pacific Division",
+                        "abbreviation": "Pacific",
+                        "teams": [{
+                            "venue": {
+                                "venueId": 9,
+                                "name": "ORACLE Arena",
+                                "city": "Oakland",
+                                "state": {
+                                    "stateId": 5,
+                                    "name": "California",
+                                    "abbreviation": "CA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 9,
+                            "location": "Golden State",
+                            "nickname": "Warriors",
+                            "abbreviation": "GS",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 12,
+                                "name": "Staples Center",
+                                "city": "Los Angeles",
+                                "state": {
+                                    "stateId": 5,
+                                    "name": "California",
+                                    "abbreviation": "CA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 12,
+                            "location": "Los Angeles",
+                            "nickname": "Clippers",
+                            "abbreviation": "LAC",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 13,
+                                "name": "Staples Center",
+                                "city": "Los Angeles",
+                                "state": {
+                                    "stateId": 5,
+                                    "name": "California",
+                                    "abbreviation": "CA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 13,
+                            "location": "Los Angeles",
+                            "nickname": "Lakers",
+                            "abbreviation": "LAL",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 21,
+                                "name": "Talking Stick Resort Arena",
+                                "city": "Phoenix",
+                                "state": {
+                                    "stateId": 3,
+                                    "name": "Arizona",
+                                    "abbreviation": "AZ"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 21,
+                            "location": "Phoenix",
+                            "nickname": "Suns",
+                            "abbreviation": "Pho",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 15210,
+                                "name": "Golden 1 Center",
+                                "city": "Sacramento",
+                                "state": {
+                                    "stateId": 5,
+                                    "name": "California",
+                                    "abbreviation": "CA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 23,
+                            "location": "Sacramento",
+                            "nickname": "Kings",
+                            "abbreviation": "Sac",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }]
+                    }, {
+                        "divisionId": 6,
+                        "name": "Southwest Division",
+                        "abbreviation": "Southwest",
+                        "teams": [{
+                            "venue": {
+                                "venueId": 2757,
+                                "name": "American Airlines Center",
+                                "city": "Dallas",
+                                "state": {
+                                    "stateId": 43,
+                                    "name": "Texas",
+                                    "abbreviation": "TX"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 6,
+                            "location": "Dallas",
+                            "nickname": "Mavericks",
+                            "abbreviation": "Dal",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 3491,
+                                "name": "Toyota Center",
+                                "city": "Houston",
+                                "state": {
+                                    "stateId": 43,
+                                    "name": "Texas",
+                                    "abbreviation": "TX"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 10,
+                            "location": "Houston",
+                            "nickname": "Rockets",
+                            "abbreviation": "Hou",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 4265,
+                                "name": "FedExForum",
+                                "city": "Memphis",
+                                "state": {
+                                    "stateId": 42,
+                                    "name": "Tennessee",
+                                    "abbreviation": "TN"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 29,
+                            "location": "Memphis",
+                            "nickname": "Grizzlies",
+                            "abbreviation": "Mem",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 3403,
+                                "name": "Smoothie King Center",
+                                "city": "New Orleans",
+                                "state": {
+                                    "stateId": 18,
+                                    "name": "Louisiana",
+                                    "abbreviation": "LA"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 3,
+                            "location": "New Orleans",
+                            "nickname": "Pelicans",
+                            "abbreviation": "NO",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 3404,
+                                "name": "AT&T Center",
+                                "city": "San Antonio",
+                                "state": {
+                                    "stateId": 43,
+                                    "name": "Texas",
+                                    "abbreviation": "TX"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 24,
+                            "location": "San Antonio",
+                            "nickname": "Spurs",
+                            "abbreviation": "SA",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }]
+                    }, {
+                        "divisionId": 7,
+                        "name": "Northwest Division",
+                        "abbreviation": "Northwest",
+                        "teams": [{
+                            "venue": {
+                                "venueId": 7,
+                                "name": "Pepsi Center",
+                                "city": "Denver",
+                                "state": {
+                                    "stateId": 6,
+                                    "name": "Colorado",
+                                    "abbreviation": "CO"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 7,
+                            "location": "Denver",
+                            "nickname": "Nuggets",
+                            "abbreviation": "Den",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 16,
+                                "name": "Target Center",
+                                "city": "Minneapolis",
+                                "state": {
+                                    "stateId": 23,
+                                    "name": "Minnesota",
+                                    "abbreviation": "MN"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 16,
+                            "location": "Minnesota",
+                            "nickname": "Timberwolves",
+                            "abbreviation": "Min",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 3755,
+                                "name": "Chesapeake Energy Arena",
+                                "city": "Oklahoma City",
+                                "state": {
+                                    "stateId": 36,
+                                    "name": "Oklahoma",
+                                    "abbreviation": "OK"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 25,
+                            "location": "Oklahoma City",
+                            "nickname": "Thunder",
+                            "abbreviation": "OKC",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 22,
+                                "name": "Moda Center at the Rose Quarter",
+                                "city": "Portland",
+                                "state": {
+                                    "stateId": 37,
+                                    "name": "Oregon",
+                                    "abbreviation": "OR"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 22,
+                            "location": "Portland",
+                            "nickname": "Trail Blazers",
+                            "abbreviation": "Por",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }, {
+                            "venue": {
+                                "venueId": 26,
+                                "name": "Vivint Smart Home Arena",
+                                "city": "Salt Lake City",
+                                "state": {
+                                    "stateId": 44,
+                                    "name": "Utah",
+                                    "abbreviation": "UT"
+                                },
+                                "country": {
+                                    "countryId": 1,
+                                    "name": "United States",
+                                    "abbreviation": "USA"
+                                }
+                            },
+                            "teamId": 26,
+                            "location": "Utah",
+                            "nickname": "Jazz",
+                            "abbreviation": "Uta",
+                            "country": {
+                                "countryId": 1,
+                                "name": "United States",
+                                "abbreviation": "USA"
+                            }
+                        }]
+                    }]
+                }],
+                "allstar": {
+                    "teams": [{
+                        "teamId": 53,
+                        "location": "East",
+                        "nickname": "All-Stars",
+                        "abbreviation": "ECS"
+                    }, {
+                        "teamId": 54,
+                        "location": "West",
+                        "nickname": "All-Stars",
+                        "abbreviation": "WCS"
+                    }]
+                }
+            }
+        }
+    }]
+}

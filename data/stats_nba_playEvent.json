@@ -1,0 +1,2433 @@
+{
+  "sport": {
+    
+    "sportId": "1",
+    "name": "Basketball",
+    "league": {
+      "leagueId": "1",
+      "name": "National Basketball Assoc.",
+      "abbreviation": "NBA",
+      "displayName": "National Basketball Assoc.",
+      "playEvents": {
+        "playEvent": [
+          {
+            "playEventId": "13",
+            "name": "Ejection",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Second Technical"
+            }
+          },
+          {
+            "playEventId": "13",
+            "name": "Ejection",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Second Flagrant Type 1"
+            }
+          },
+          {
+            "playEventId": "13",
+            "name": "Ejection",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "First Flagrant Type 2"
+            }
+          },
+          {
+            "playEventId": "13",
+            "name": "Ejection",
+            "playDetail": {
+              "playDetailId": "4",
+              "name": "Other"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "23",
+              "name": "Lost Ball Out of Bounds"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "24",
+              "name": "Swinging Elbows Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "25",
+              "name": "Illegal Screen Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "26",
+              "name": "Stepped Out of Bounds"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "27",
+              "name": "8 Second Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "28",
+              "name": "Stolen Pass Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "29",
+              "name": "Enter Basket from Below"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "8",
+              "name": "Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "40",
+              "name": "Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "41",
+              "name": "Running Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "42",
+              "name": "Driving Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "43",
+              "name": "Alley Oop Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "44",
+              "name": "Reverse Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "45",
+              "name": "Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "46",
+              "name": "Running Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "47",
+              "name": "Turnaround Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "48",
+              "name": "Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "50",
+              "name": "Running Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "51",
+              "name": "Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "52",
+              "name": "Alley Oop Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "53",
+              "name": "Tip Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "54",
+              "name": "Running Tip Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "55",
+              "name": "Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "56",
+              "name": "Running Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "57",
+              "name": "Driving Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "58",
+              "name": "Turnaround Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "59",
+              "name": "Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "60",
+              "name": "Running Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "61",
+              "name": "Driving Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "62",
+              "name": "Turnaround Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "63",
+              "name": "Fade Away"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "64",
+              "name": "Jump Hook"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "65",
+              "name": "Follow Up Dunk"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "49",
+              "name": "Driving Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "8",
+              "name": "Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "40",
+              "name": "Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "41",
+              "name": "Running Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "42",
+              "name": "Driving Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "43",
+              "name": "Alley Oop Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "44",
+              "name": "Reverse Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "45",
+              "name": "Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "46",
+              "name": "Running Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "47",
+              "name": "Turnaround Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "48",
+              "name": "Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "50",
+              "name": "Running Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "51",
+              "name": "Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "52",
+              "name": "Alley Oop Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "53",
+              "name": "Tip Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "54",
+              "name": "Running Tip Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "55",
+              "name": "Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "56",
+              "name": "Running Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "57",
+              "name": "Driving Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "58",
+              "name": "Turnaround Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "59",
+              "name": "Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "60",
+              "name": "Running Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "61",
+              "name": "Driving Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "62",
+              "name": "Turnaround Finger Roll Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "63",
+              "name": "Fade Away"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "64",
+              "name": "Jump Hook"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "65",
+              "name": "Follow Up Dunk"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "49",
+              "name": "Driving Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "10",
+              "name": "Free Throw 1 of 1"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "11",
+              "name": "Free Throw 1 of 2"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "12",
+              "name": "Free Throw 2 of 2"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "13",
+              "name": "Free Throw 1 of 3"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "14",
+              "name": "Free Throw 2 of 3"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "15",
+              "name": "Free Throw 3 of 3"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "16",
+              "name": "Free Throw Technical"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "17",
+              "name": "Free Throw Clear Path"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "18",
+              "name": "Free Throw Flagrant 1 of 2"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "19",
+              "name": "Free Throw Flagrant 2 of 2"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "20",
+              "name": "Free Throw Flagrant 1 of 1"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "10",
+              "name": "Free Throw 1 of 1"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "11",
+              "name": "Free Throw 1 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "12",
+              "name": "Free Throw 2 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "13",
+              "name": "Free Throw 1 of 3"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "14",
+              "name": "Free Throw 2 of 3"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "15",
+              "name": "Free Throw 3 of 3"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "16",
+              "name": "Free Throw Technical"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "17",
+              "name": "Free Throw Clear Path"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "18",
+              "name": "Free Throw Flagrant 1 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "19",
+              "name": "Free Throw Flagrant 2 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "20",
+              "name": "Free Throw Flagrant 1 of 1"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Bad Pass"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Lost Ball"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "Out of Bounds"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "4",
+              "name": "Traveling"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "5",
+              "name": "Offensive Foul-Charge"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "6",
+              "name": "Double Dribble"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "7",
+              "name": "Discontinue Dribble"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "8",
+              "name": "3 Second Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "9",
+              "name": "5 Second Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "10",
+              "name": "10 Second Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "11",
+              "name": "Shot Clock Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "12",
+              "name": "Inbound Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "13",
+              "name": "Backcourt Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "14",
+              "name": "Illegal Pick"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "15",
+              "name": "Offensive Goaltending"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "16",
+              "name": "Isolation Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "17",
+              "name": "Lane Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "18",
+              "name": "Jump Ball Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "19",
+              "name": "Kicked Ball Violation"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "20",
+              "name": "Illegal Assist Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "21",
+              "name": "Palming Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "22",
+              "name": "Post Up Turnover"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Personal"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Shooting"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "Loose Ball"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "4",
+              "name": "Offensive"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "5",
+              "name": "Inbound"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "6",
+              "name": "Away From Play"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "7",
+              "name": "Elbow"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "8",
+              "name": "Punching"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "9",
+              "name": "Clear Path"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "10",
+              "name": "Double Personal"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "11",
+              "name": "Technical"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "12",
+              "name": "Non Supported Technical"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "13",
+              "name": "Hanging Technical"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "14",
+              "name": "Flagrant Type 1"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "15",
+              "name": "Flagrant Type 2"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "16",
+              "name": "Double Technical"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "17",
+              "name": "Illegal Defense"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "18",
+              "name": "Delay Technical"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "19",
+              "name": "Taunting Technical"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "20",
+              "name": "Player Control Foul"
+            }
+          },
+          {
+            "playEventId": "9",
+            "name": "Violation",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Delay of Game"
+            }
+          },
+          {
+            "playEventId": "9",
+            "name": "Violation",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Illegal Defense"
+            }
+          },
+          {
+            "playEventId": "9",
+            "name": "Violation",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "Defensive Goaltending"
+            }
+          },
+          {
+            "playEventId": "9",
+            "name": "Violation",
+            "playDetail": {
+              "playDetailId": "4",
+              "name": "Lane"
+            }
+          },
+          {
+            "playEventId": "9",
+            "name": "Violation",
+            "playDetail": {
+              "playDetailId": "5",
+              "name": "Jump Ball"
+            }
+          },
+          {
+            "playEventId": "9",
+            "name": "Violation",
+            "playDetail": {
+              "playDetailId": "6",
+              "name": "Kicked Ball"
+            }
+          },
+          {
+            "playEventId": "11",
+            "name": "Timeout",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Regular"
+            }
+          },
+          {
+            "playEventId": "11",
+            "name": "Timeout",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Short"
+            }
+          },
+          {
+            "playEventId": "11",
+            "name": "Timeout",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "Official TV"
+            }
+          },
+          {
+            "playEventId": "11",
+            "name": "Timeout",
+            "playDetail": {
+              "playDetailId": "4",
+              "name": "Official"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "66",
+              "name": "Bank Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "66",
+              "name": "Bank Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "67",
+              "name": "Hook Bank Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "67",
+              "name": "Hook Bank Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "68",
+              "name": "Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "68",
+              "name": "Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "69",
+              "name": "Putback Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "69",
+              "name": "Putback Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "70",
+              "name": "Driving Reverse Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "70",
+              "name": "Driving Reverse Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "71",
+              "name": "Running Reverse Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "71",
+              "name": "Running Reverse Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "72",
+              "name": "Driving Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "72",
+              "name": "Driving Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "73",
+              "name": "Running Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "73",
+              "name": "Running Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "74",
+              "name": "Driving Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "74",
+              "name": "Driving Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "75",
+              "name": "Floating Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "75",
+              "name": "Floating Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "76",
+              "name": "Pull Up Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "76",
+              "name": "Pull Up Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "77",
+              "name": "Step Back Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "77",
+              "name": "Step Back Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "78",
+              "name": "Pull Up Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "78",
+              "name": "Pull Up Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "79",
+              "name": "Driving Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "79",
+              "name": "Driving Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "80",
+              "name": "Fade Away Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "80",
+              "name": "Fade Away Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "81",
+              "name": "Running Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "81",
+              "name": "Running Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "82",
+              "name": "Turnaround Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "82",
+              "name": "Turnaround Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "83",
+              "name": "Turnaround Fade Away Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "83",
+              "name": "Turnaround Fade Away Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "84",
+              "name": "Putback Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "84",
+              "name": "Putback Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "85",
+              "name": "Driving Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "85",
+              "name": "Driving Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "86",
+              "name": "Reverse Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "86",
+              "name": "Reverse Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "87",
+              "name": "Running Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "87",
+              "name": "Running Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "88",
+              "name": "Putback Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "88",
+              "name": "Putback Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "89",
+              "name": "Putback Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "89",
+              "name": "Putback Slam Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "90",
+              "name": "Driving Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "90",
+              "name": "Driving Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "91",
+              "name": "Jump Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "91",
+              "name": "Jump Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "92",
+              "name": "Running Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "92",
+              "name": "Running Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "93",
+              "name": "Turnaround Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "93",
+              "name": "Turnaround Bank Hook Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "94",
+              "name": "Unknown Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "94",
+              "name": "Unknown Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "95",
+              "name": "No Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "95",
+              "name": "No Shot"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "21",
+              "name": "Free Throw Technical 1 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "21",
+              "name": "Free Throw Technical 1 of 2"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "22",
+              "name": "Free Throw Technical 2 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "22",
+              "name": "Free Throw Technical 2 of 2"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "23",
+              "name": "Free Throw Clear Path 1 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "23",
+              "name": "Free Throw Clear Path 1 of 2"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "24",
+              "name": "Free Throw Clear Path 2 of 2"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "24",
+              "name": "Free Throw Clear Path 2 of 2"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "21",
+              "name": "Flagrant"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "22",
+              "name": "Charging"
+            }
+          },
+          {
+            "playEventId": "16",
+            "name": "Clock Sync",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Clock Start"
+            }
+          },
+          {
+            "playEventId": "16",
+            "name": "Clock Sync",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Clock Stop"
+            }
+          },
+          {
+            "playEventId": "16",
+            "name": "Clock Sync",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "Clock Inc"
+            }
+          },
+          {
+            "playEventId": "16",
+            "name": "Clock Sync",
+            "playDetail": {
+              "playDetailId": "4",
+              "name": "Clock Dec"
+            }
+          },
+          {
+            "playEventId": "17",
+            "name": "Instant Replay",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Support Ruling"
+            }
+          },
+          {
+            "playEventId": "17",
+            "name": "Instant Replay",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Overturn Ruling"
+            }
+          },
+          {
+            "playEventId": "17",
+            "name": "Instant Replay",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "Altercation"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Good Basket"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "2",
+              "name": "Good Basket 2 to 3"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "3",
+              "name": "Good Basket 3 to 2"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "4",
+              "name": "No Basket"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "5",
+              "name": "No Basket 2 to 3"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "6",
+              "name": "No Basket 3 to 2"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "7",
+              "name": "Foul Before Expiration"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "8",
+              "name": "Foul After Expiration"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "9",
+              "name": "Shot Clock Violation"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "10",
+              "name": "Other Ruling"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "11",
+              "name": "Flagrant Foul 2 to 1"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "12",
+              "name": "Flagrant Foul 2 to Personal"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "13",
+              "name": "Flagrant Foul Upheld"
+            }
+          },
+          {
+            "playEventId": "5",
+            "name": "Offensive Rebound",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Placeholder"
+            }
+          },
+          {
+            "playEventId": "6",
+            "name": "Defensive Rebound",
+            "playDetail": {
+              "playDetailId": "1",
+              "name": "Placeholder"
+            }
+          },
+          {
+            "playEventId": "9",
+            "name": "Violation",
+            "playDetail": {
+              "playDetailId": "7",
+              "name": "Double Lane"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "30",
+              "name": "Punched Ball"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "31",
+              "name": "Double Personal Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "32",
+              "name": "Opposite Basket Turnover"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "33",
+              "name": "Excess Timeout Turnover"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "23",
+              "name": "Excess Timeout Tech Foul"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "26",
+              "name": "Offensive Charge Foul"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "27",
+              "name": "Personal Block Foul"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "28",
+              "name": "Personal Take Foul"
+            }
+          },
+          {
+            "playEventId": "16",
+            "name": "Clock Sync",
+            "playDetail": {
+              "playDetailId": "5",
+              "name": "Auto Clock"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "34",
+              "name": "Player Out of Bounds Violation"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "14",
+              "name": "Clock Start Early"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "15",
+              "name": "Clock Start Late"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "16",
+              "name": "Clock Stop Early"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "17",
+              "name": "Clock Stop Late"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "18",
+              "name": "Clock Other Issue"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "19",
+              "name": "DUR 2FG"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "20",
+              "name": "DUR 3FG"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "21",
+              "name": "DUR 2FT"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "22",
+              "name": "DUR 3FT"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "43",
+              "name": "Off Ball Foul Before Inbounds"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "44",
+              "name": "Off Ball Foul After Inbounds"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "45",
+              "name": "Off Ball Foul Before FGM"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "46",
+              "name": "Off Ball Foul After FGM"
+            }
+          },
+          {
+            "playEventId": "18",
+            "name": "Replay Ruling",
+            "playDetail": {
+              "playDetailId": "47",
+              "name": "Restricted Area Def Moving"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "31",
+              "name": "Admin Technical Foul"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "8",
+              "name": "Free Throw 1st of 1-and-1"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "9",
+              "name": "Free Throw 2nd of 1-and-1"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "8",
+              "name": "Free Throw 1st of 1-and-1"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "9",
+              "name": "Free Throw 2nd of 1-and-1"
+            }
+          },
+          {
+            "playEventId": "11",
+            "name": "Timeout",
+            "playDetail": {
+              "playDetailId": "5",
+              "name": "Advance"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "30",
+              "name": "Too Many Players Technical"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "44",
+              "name": "Too Many Players Turnover"
+            }
+          },
+          {
+            "playEventId": "8",
+            "name": "Foul",
+            "playDetail": {
+              "playDetailId": "29",
+              "name": "Shooting Block Foul"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "0",
+              "name": "Other"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "0",
+              "name": "Other"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "96",
+              "name": "Tip Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "96",
+              "name": "Tip Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "97",
+              "name": "Cutting Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "97",
+              "name": "Cutting Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "98",
+              "name": "Cutting Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "98",
+              "name": "Cutting Finger Roll Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "99",
+              "name": "Running Alley Oop Layup Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "99",
+              "name": "Running Alley Oop Layup Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "100",
+              "name": "Driving Floating Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "100",
+              "name": "Driving Floating Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "101",
+              "name": "Driving Floating Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "101",
+              "name": "Driving Floating Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "102",
+              "name": "Running Pull-Up Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "102",
+              "name": "Running Pull-Up Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "103",
+              "name": "Step Back Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "103",
+              "name": "Step Back Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "104",
+              "name": "Turnaround Fadeaway Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "104",
+              "name": "Turnaround Fadeaway Bank Jump Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "105",
+              "name": "Running Alley Oop Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "105",
+              "name": "Running Alley Oop Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "106",
+              "name": "Tip Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "106",
+              "name": "Tip Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "107",
+              "name": "Cutting Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "107",
+              "name": "Cutting Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "108",
+              "name": "Driving Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "108",
+              "name": "Driving Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "3",
+            "name": "Field Goal Made",
+            "playDetail": {
+              "playDetailId": "109",
+              "name": "Running Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "4",
+            "name": "Field Goal Missed",
+            "playDetail": {
+              "playDetailId": "109",
+              "name": "Running Reverse Dunk Shot"
+            }
+          },
+          {
+            "playEventId": "7",
+            "name": "Turnover",
+            "playDetail": {
+              "playDetailId": "45",
+              "name": "Out of Bounds - Bad Pass Turnover"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "27",
+              "name": "Free Throw Flagrant 1 of 3"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "28",
+              "name": "Free Throw Flagrant 2 of 3"
+            }
+          },
+          {
+            "playEventId": "1",
+            "name": "Free Throw Made",
+            "playDetail": {
+              "playDetailId": "29",
+              "name": "Free Throw Flagrant 3 of 3"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "27",
+              "name": "Free Throw Flagrant 1 of 3"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "28",
+              "name": "Free Throw Flagrant 2 of 3"
+            }
+          },
+          {
+            "playEventId": "2",
+            "name": "Free Throw Missed",
+            "playDetail": {
+              "playDetailId": "29",
+              "name": "Free Throw Flagrant 3 of 3"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
