@@ -1,0 +1,20 @@
+{
+  "name": "node_json_handler",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://krkim@bitbucket.org/okiworks/node_json_handler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/okiworks/node_json_handler#readme",
+  "dependencies": {
+    "jsdom": "^9.8.3",
+    "request": "^2.79.0"
+  }
+}
