@@ -26,7 +26,7 @@ module.exports = function(testDataLocation){
 			console.log(result);
 		}
 
-		//console.log(playEvents);	
+		//console.log(playEvents);
 	}
 
 	this.printNflPlayDetail = function(s_fileName){
@@ -40,9 +40,9 @@ module.exports = function(testDataLocation){
 		var playTypes =apiResults['playTypes']
 
 		for(var item of playTypes){
-			console.log(item['playTypeId'] + ", " + item['name']);	
+			console.log(item['playTypeId'] + ", " + item['name']);
 		}
-		
+
 	}
 
 
@@ -60,7 +60,7 @@ module.exports = function(testDataLocation){
 		var western = conferences[1]['divisions'];
 
 		for(var item of estern){
-			
+
 			for(var team of item['teams']){
 				result = "";
 				result += item['name'] + ",";
@@ -94,7 +94,7 @@ module.exports = function(testDataLocation){
 		var league = apiResult['league'];
 		var players = league['players'];
 
-		
+
 		for (var player of players){
 			console.log(player);
 			var result = "";
@@ -102,10 +102,34 @@ module.exports = function(testDataLocation){
 			result += player['team']['abbreviation'] + ",";
 			result += player['firstName'] + " ";
 			result += player['lastName'];
-			
+
 			console.log(result);
 		}
 
+	}
+
+	this.printHockeyGameSchedule = function(index) {
+		jsonString = fh.getNFileContentsString(index);
+		// console.log(jsonString);
+		var jsonObject = fh.getJsonObject(jsonString);
+
+		var apiResults = jsonObject['apiResults'][0];
+		var league = apiResults['league'];
+		var season = league['season'];
+		var eventType = season['eventType'][0]
+		var events = eventType['events'];
+
+		var result = "";
+
+		for(var item of events) {
+				result += item['eventId'] + ",";
+				result += item['teams'][0]['nickname'] + " vs " + item['teams'][1]['nickname'] + ",";
+				var startDateUTC = item['startDate'][1];
+				result += startDateUTC['year'] + "-" + startDateUTC['month'] + "-" + startDateUTC['date'] + ",";
+				result += startDateUTC['hour'] + ":" + startDateUTC['minute'] + "\n";
+
+		}
+		console.log(result);
 	}
 
 	this.printFileList=()=>{
@@ -127,7 +151,7 @@ module.exports = function(testDataLocation){
 
 			var result = "";
 			result += event['eventId'];
-			
+
 
 			result += ", " + event['teams'][0]['nickname'] + " vs " +event['teams'][1]['nickname'];
 			result += ", " + event['startDate'][1]['year'];
@@ -139,26 +163,26 @@ module.exports = function(testDataLocation){
 
 		}
 
-		
+
 
 	}
 
 	//경기 데이터 출력하는 기능
 	this.printGameData = function( start_num, end_num){
 		for(var i = start_num ; i < end_num; i++){
-			
+
 			//console.log("--------" + fileList[i] + "---------");
 			jsonString_a = fh.getNFileContentsString(i);
-			
+
 			var jsonObject = fh.getJsonObject(jsonString_a);
 			var events;
 			try{
-				events =jsonObject['apiResults'][0]['league']['season']['eventType'][0]['events'];	
+				events =jsonObject['apiResults'][0]['league']['season']['eventType'][0]['events'];
 			}catch(e){
 				console.log(e);
 			}
-			
-			
+
+
 			var pbp = events[0]['pbp'];
 
 			//console.log(pbp);
@@ -167,13 +191,13 @@ module.exports = function(testDataLocation){
 
 			for (var item of pbp){
 				//console.log(item);
-				
+
 
 				var printContents = "";
 				printContents += item['playId'];
 				printContents += ","+ item['period'];
 				printContents += ","+ item['teamId'];
-				
+
 
 				if(item['pointsScored'] != null){
 					printContents += ", " + item['pointsScored'];
@@ -186,7 +210,7 @@ module.exports = function(testDataLocation){
 				if(item['players'][0] != null){
 					printContents += ", " + item['players'][0]['firstName'] +" "+ item['players'][0]['lastName'];
 				} else{printContents += ", " + "p1없음"}
-				
+
 				if(item['players'][1] != null){
 					printContents += ", " + item['players'][1]['playerId'];
 				} else{printContents += ", " + ""}
@@ -194,23 +218,21 @@ module.exports = function(testDataLocation){
 				if(item['players'][1] != null){
 					printContents += ", " + item['players'][1]['firstName'] +" "+ item['players'][1]['lastName'];
 				} else{printContents += ", " + ""}
-				
+
 				printContents += ", " + item['playEvent']['playEventId'];
 				printContents += ", " + item['playEvent']['name'];
-				
+
 
 				if(item['playEvent']['playDetail']['playDetailId'] != null){
 					printContents += ", " + item['playEvent']['playDetail']['playDetailId'];
 				}else{printContents += ", " + ""}
-				
+
 				if(item['playEvent']['playDetail']['name'] != null){
 					printContents += ", " + item['playEvent']['playDetail']['name'];
 				}else{printContents += ", " + ""}
-				
+
 				console.log(printContents);
 			}
 		}
 	}
 }
-
- 
