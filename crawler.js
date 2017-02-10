@@ -2,18 +2,12 @@
 크롤러
 특정 page를 1초마다 지정한 dir에 저장한다.
 */
-
 var http = require('http');
 var request = require('request');
 var fs = require("fs");
 const dateTime = require("node-datetime");
 
-const requestLoop = setInterval(()=>{
-  parse("http://www.google.com");
-}, 1000); //여기 1000이 1초이다. 10초로 하고 싶으면 10000으로 하면 된다.
-
-
-const parse =(url)=>{
+const parse =(url, fileLocation, callback)=>{
   request({
       url: url,
       method: "GET",
@@ -22,11 +16,10 @@ const parse =(url)=>{
       maxRedirects: 10
   },(error, response, body)=>{
       if(!error && response.statusCode == 200){
-
           let dt = dateTime.create();
           let formatted = dt.format('Y-m-d-H-M-S');
-          let fileName = "./saved/" + formatted + ".json";
-          writeFile(body, fileName);
+          let fileName = fileLocation + formatted + ".json";
+          callback(body, fileName);
       }else{
           console.log('error' + response.statusCode);
       }
@@ -45,3 +38,6 @@ const writeFile = (text, targetFileName)=>{
   });
 
 }
+
+exports.parse = parse;
+exports.writeFile = writeFile;
