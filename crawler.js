@@ -5,9 +5,9 @@
 var http = require('http');
 var request = require('request');
 var fs = require("fs");
-const dateTime = require("node-datetime");
 
-const parse =(url, fileLocation, callback)=>{
+
+const parse =(url, callback)=>{
   request({
       url: url,
       method: "GET",
@@ -16,10 +16,8 @@ const parse =(url, fileLocation, callback)=>{
       maxRedirects: 10
   },(error, response, body)=>{
       if(!error && response.statusCode == 200){
-          let dt = dateTime.create();
-          let formatted = dt.format('Y-m-d-H-M-S');
-          let fileName = fileLocation + formatted + ".json";
-          callback(body, fileName);
+
+          callback(body);
       }else{
           console.log('error' + response.statusCode);
       }
