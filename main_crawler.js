@@ -18,13 +18,13 @@ const dateTime = require("node-datetime");
 const apiKey = "hrzct5ze45rs6vd5f7nuuyfn"
 const secret = "FUcabTvbbG"
 //eventid, apikey, signature
-const footballLiveFormat = "http://api.stats.com/v1/stats/soccer/epl/events/%s/?accept=json&linescore=true&box=true&pbp=true&languageId=15&api_key=%s&sig=%s"
+const footballLiveFormat = "http://api.stats.com/v1/stats/soccer/epl/events/%s/?accept=json&linescore=true&pbp=true&languageId=15&api_key=%s&sig=%s"
 
 var token = '239008772:AAEqyNeEeJM6WGvRNOYD8S7DE8kcgQBD5qM';
 var bot = new TelegramBot(token, { polling: false });
 
 //sha256으로 encoding한다.
-var signature = SHA256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) )
+
 var beforeRes = "";
 var beforeMessage = "";
 var beforePbpLength = 0;
@@ -40,17 +40,17 @@ let serviceFn = (res)=>{
   let minutes = eventStatus['time']['minutes'];
   let seconds = eventStatus['time']['seconds'];
 
-  let boxscores = selectedEvent['boxscores'];
-  let boxscores_1 = boxscores[0];
-  let boxscores_2 = boxscores[1];
+  // let boxscores = selectedEvent['boxscores'];
+  // let boxscores_1 = boxscores[0];
+  // let boxscores_2 = boxscores[1];
+  //
+  // let teamStats_1 = boxscores_1['teamStats'];
+  // let teamStats_2 = boxscores_2['teamStats'];
 
-  let teamStats_1 = boxscores_1['teamStats'];
-  let teamStats_2 = boxscores_2['teamStats'];
-
-  let yellowCards_1 = teamStats_1['yellowCards']
-  let yellowCards_2 = teamStats_2['yellowCards']
-  let redCards_1 = teamStats_1['redCards']
-  let redCards_2 = teamStats_2['redCards']
+  // let yellowCards_1 = teamStats_1['yellowCards']
+  // let yellowCards_2 = teamStats_2['yellowCards']
+  // let redCards_1 = teamStats_1['redCards']
+  // let redCards_2 = teamStats_2['redCards']
 
   let pbpLength = pbp.length;
   let team_1 = teams[0];
@@ -64,8 +64,8 @@ let serviceFn = (res)=>{
   + team_2['displayName']
   + " linescores:" + JSON.stringify(linescore_2)
   + " pbp:"+ JSON.stringify(pbp[pbpLength-1]['playText'])
-  + " yello_1:" + yellowCards_1 + " yello_2:" + yellowCards_2
-  + " red_1:" + redCards_1 + " red_2:" + redCards_2
+  //+ " yello_1:" + yellowCards_1 + " yello_2:" + yellowCards_2
+  //+ " red_1:" + redCards_1 + " red_2:" + redCards_2
   //+ " teamStats_1:"+ JSON.stringify(teamStats_1)
   //+ " teamStats_2:"+ JSON.stringify(teamStats_2)
   ;
@@ -84,13 +84,20 @@ let serviceFn = (res)=>{
 let getSetInterval = ()=>{
     return setInterval(()=>{
       //1.주소를 만든다
-      let url = util.format(footballLiveFormat, "1643374", apiKey, signature)
+      let signature = SHA256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) )
+      let url = util.format(footballLiveFormat, "1643377", apiKey, signature)
+      console.log(url);
       let nowDate = new Date();
-      let startDate = new Date("2017", "1", "11", "21","30","0");
-      let endDate = new Date("2017", "1", "11", "24","00","0");
+      let startDate = new Date("2017", "1", "11", "23","0","0");
+      let endDate = new Date("2017", "1", "12", "3","0","0");
 
       if(startDate < nowDate && nowDate < endDate ){
-          crawler.parse(url, serviceFn );
+          try{
+            crawler.parse(url, serviceFn );
+          }catch(e){
+            console.log(e)
+          }
+
       }
 
     }, 4000); //여기 1000이 1초이다. 10초로 하고 싶으면 10000으로 하면 된다.

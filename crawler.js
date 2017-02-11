@@ -6,7 +6,6 @@ var http = require('http');
 var request = require('request');
 var fs = require("fs");
 
-
 const parse =(url, callback)=>{
   request({
       url: url,
@@ -16,15 +15,13 @@ const parse =(url, callback)=>{
       maxRedirects: 10
   },(error, response, body)=>{
       if(!error && response.statusCode == 200){
-
           callback(body);
       }else{
-          console.log('error' + response.statusCode);
+          //console.log('error' + response.statusCode);
+          console.log('error');
       }
   });
 }
-
-//parse("http://www.google.com");
 
 //text를 지정한 파일경로에 쓴다.
 const writeFile = (text, targetFileName)=>{
@@ -34,7 +31,6 @@ const writeFile = (text, targetFileName)=>{
     }
     console.log(targetFileName + " was saved!");
   });
-
 }
 
 exports.parse = parse;
