@@ -15,7 +15,12 @@ const parse =(url, callback)=>{
       maxRedirects: 10
   },(error, response, body)=>{
       if(!error && response.statusCode == 200){
-          callback(body);
+          try{
+              callback(body);
+          }catch(e){
+              console.log(e);
+          }
+
       }else{
           //console.log('error' + response.statusCode);
           console.log('error');

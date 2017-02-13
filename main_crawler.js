@@ -8,6 +8,21 @@ eventid
 1643382, West Ham United vs West Bromwich Albion, 2017, 2, 11, 15, 0
 1643376, Liverpool vs Tottenham Hotspur, 2017, 2, 11, 17, 30
 */
+
+const scheduleList = [
+    {"eventId":"1643377", "sYear":"2017", "sMonth":"1", "sDate":"11"
+        , "sHour":"23"  ,"sMinute":"0"  ,"sSecond":"0"
+        , "eYear":"2017", "eMonth":"1", "eDate":"12"
+        , "eHour":"3"  ,"eMinute":"0"  ,"eSecond":"0"
+    },
+    {"eventId":"1643371", "sYear":"2017", "sMonth":"1", "sDate":"13"
+        , "sHour":"20"  ,"sMinute":"0"  ,"sSecond":"0"
+        , "eYear":"2017", "eMonth":"1", "eDate":"13"
+        , "eHour":"23"  ,"eMinute":"0"  ,"eSecond":"0"
+    },
+
+]
+
 const crawler = require("./crawler.js");
 const util = require("util");
 const SHA256 = require("crypto-js/sha256");
@@ -19,6 +34,7 @@ const apiKey = "hrzct5ze45rs6vd5f7nuuyfn"
 const secret = "FUcabTvbbG"
 //eventid, apikey, signature
 const footballLiveFormat = "http://api.stats.com/v1/stats/soccer/epl/events/%s/?accept=json&linescore=true&pbp=true&languageId=15&api_key=%s&sig=%s"
+const footballScheduleFormat = "http://api.stats.com/v1/stats/soccer/epl/scores/?date=%s&accept=json&api_key=%s&sig=%s";
 
 var token = '239008772:AAEqyNeEeJM6WGvRNOYD8S7DE8kcgQBD5qM';
 var bot = new TelegramBot(token, { polling: false });
@@ -81,16 +97,17 @@ let serviceFn = (res)=>{
 }
 
 //2.parse를 호출한다. callback으로 fileWriter를 넘긴다.
-let getSetInterval = ()=>{
+let getSetInterval = (schedule)=>{
     return setInterval(()=>{
       //1.주소를 만든다
-      let signature = SHA256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) )
-      let url = util.format(footballLiveFormat, "1643377", apiKey, signature)
+      let signature = getSignature(apiKey, secret);
+      let url = util.format(footballLiveFormat, schedule['eventId'], apiKey, signature)
       console.log(url);
       let nowDate = new Date();
-      let startDate = new Date("2017", "1", "11", "23","0","0");
-      let endDate = new Date("2017", "1", "12", "3","0","0");
+      let startDate = new Date(Date.UTC(schedule['sYear'], schedule['sMonth'], schedule['sDate'], schedule['sHour'],schedule['sMinute'],schedule['sSecond']));
+      let endDate = new Date(Date.UTC(schedule['eYear'], schedule['eMonth'], schedule['eDate'], schedule['eHour'],schedule['eMinute'],schedule['eSecond']));
 
+      console.log("will be parsed:"+(startDate < nowDate && nowDate < endDate));
       if(startDate < nowDate && nowDate < endDate ){
           try{
             crawler.parse(url, serviceFn );
@@ -100,8 +117,12 @@ let getSetInterval = ()=>{
 
       }
 
-    }, 4000); //여기 1000이 1초이다. 10초로 하고 싶으면 10000으로 하면 된다.
+    }, 3000); //여기 1000이 1초이다. 10초로 하고 싶으면 10000으로 하면 된다.
 }
 
-let hello = getSetInterval();
-//47960673318771
+const getSignature = (apiKey, secret)=>{
+    return SHA256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) )
+}
+
+console.log(new Date());
+let hello = getSetInterval(scheduleList[1]);
