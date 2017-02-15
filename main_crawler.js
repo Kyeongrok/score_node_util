@@ -1,13 +1,4 @@
-/*
-eventid
-1643374, Arsenal vs Hull City, 2017, 2, 11, 12, 30
-1643377, Manchester United vs Watford, 2017, 2, 11, 15, 0
-1643378, Middlesbrough vs Everton, 2017, 2, 11, 15, 0
-1643379, Stoke City vs Crystal Palace, 2017, 2, 11, 15, 0
-1643380, Sunderland vs Southampton, 2017, 2, 11, 15, 0
-1643382, West Ham United vs West Bromwich Albion, 2017, 2, 11, 15, 0
-1643376, Liverpool vs Tottenham Hotspur, 2017, 2, 11, 17, 30
-*/
+
 
 const scheduleList = [
     {"eventId":"1643377", "sYear":"2017", "sMonth":"1", "sDate":"11"
@@ -25,7 +16,7 @@ const scheduleList = [
 
 const crawler = require("./crawler.js");
 const util = require("util");
-const SHA256 = require("crypto-js/sha256");
+var sha256 = require('js-sha256');
 const fs = require("fs");
 var TelegramBot = require('node-telegram-bot-api');
 const dateTime = require("node-datetime");
@@ -34,6 +25,8 @@ const apiKey = "hrzct5ze45rs6vd5f7nuuyfn"
 const secret = "FUcabTvbbG"
 //eventid, apikey, signature
 const footballLiveFormat = "http://api.stats.com/v1/stats/soccer/epl/events/%s/?accept=json&linescore=true&pbp=true&languageId=15&api_key=%s&sig=%s"
+
+const basketballLiveFormat = "http://api.stats.com/v1/stats/basketball/nba/events/%s?languageId=15&pbp=true&accept=json&api_key=%s&sig=%s";
 const footballScheduleFormat = "http://api.stats.com/v1/stats/soccer/epl/scores/?date=%s&accept=json&api_key=%s&sig=%s";
 
 var token = '239008772:AAEqyNeEeJM6WGvRNOYD8S7DE8kcgQBD5qM';
@@ -121,8 +114,19 @@ let getSetInterval = (schedule)=>{
 }
 
 const getSignature = (apiKey, secret)=>{
-    return SHA256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) )
+
+    return sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) );
 }
 
 console.log(new Date());
-let hello = getSetInterval(scheduleList[1]);
+//let hello = getSetInterval(scheduleList[1]);
+
+//1675115
+
+var sig = getSignature(apiKey, secret);
+
+//http://api.stats.com/v1/stats/basketball/nba/events/1675115?languageId=15&pbp=true&accept=json&api_key=hrzct5ze45rs6vd5f7nuuyfn&sig=f307011ab653f5cdf221d709b67ec87e5aa9b9285c06fd7d5d4790cd9f3ad03b
+console.log(sig);
+var url = util.format(basketballLiveFormat, 1675115, apiKey, sig);
+console.log(url);
+crawler.parse(url, serviceFn );
