@@ -1,21 +1,12 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+json data 핸들링을 위한 node 유틸
 
-### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* 해당 목적에 맞는 main_xxxx.js 를 실행 하면 됩니다.
 
 ### Contribution guidelines ###
 
