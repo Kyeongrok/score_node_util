@@ -15,11 +15,20 @@ const getSignature = (apiKey, secret)=>{
     return sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) );
 }
 
+const getFootballLiveUrl = (eventId)=>(
+  util.format(formats['footballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret))
+)
+
 const getBasketballScheduleUrl = (startDate, endDate)=>(
   util.format(formats['basketballScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret))
+)
+const getBasketballLiveUrl = (eventId)=>(
+  util.format(formats['basketballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret))
 )
 
 module.exports = {
   getBasketballScheduleUrl:getBasketballScheduleUrl
+  ,getBasketballLiveUrl:getBasketballLiveUrl
+  ,getFootballLiveUrl:getFootballLiveUrl
 
 };

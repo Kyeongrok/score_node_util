@@ -1,27 +1,22 @@
-const scheduleList = require("./scheduleList.js");
+const statsUrlFormats = require("./statsUrlFormats.js");
 const crawler = require("./crawler.js");
-const util = require("util");
-var sha256 = require('js-sha256');
 const fs = require("fs");
 var TelegramBot = require('node-telegram-bot-api');
 const dateTime = require("node-datetime");
 
-const apiKey = "hrzct5ze45rs6vd5f7nuuyfn"
-const secret = "FUcabTvbbG"
-//eventid, apikey, signature
-const statsUrlFormats = require("./statsUrlFormats.js");
-
 var bot = new TelegramBot('239008772:AAEqyNeEeJM6WGvRNOYD8S7DE8kcgQBD5qM', { polling: false });
-
-//sha256으로 encoding한다.
 
 var beforeRes = "";
 var beforeMessage = "";
 var beforePbpLength = 0;
 
 let serviceFn = (res)=>{
-
+  //파일명 만드는 기능
+  //파일로 저장하는 기능
+  //메세지 만드는 기능
   let fileName = "./saved/" + dateTime.create().format('Y-m-d-H-M-S') + ".json";
+
+  //json 으로 만듬
   let json = JSON.parse(res);
   let selectedEvent = json['apiResults'][0]['league']['season']['eventType'][0]['events'][0];
   let teams = selectedEvent['teams'];
@@ -61,8 +56,7 @@ let serviceFn = (res)=>{
 let getSetInterval = (schedule)=>{
     return setInterval(()=>{
       //1.주소를 만든다
-      let signature = getSignature(apiKey, secret);
-      let url = util.format(statsUrlFormats['footballLiveFormat'], schedule['eventId'], apiKey, signature)
+      let url = statsUrlFormats.getFootballLiveUrl(schedule['eventId'])
       console.log(url);
       let nowDate = new Date();
       let startDate = new Date(Date.UTC(schedule['sYear'], schedule['sMonth'], schedule['sDate'], schedule['sHour'],schedule['sMinute'],schedule['sSecond']));
@@ -75,25 +69,11 @@ let getSetInterval = (schedule)=>{
           }catch(e){
             console.log(e)
           }
-
       }
-
     }, 3000); //여기 1000이 1초이다. 10초로 하고 싶으면 10000으로 하면 된다.
 }
 
-const getSignature = (apiKey, secret)=>{
-    return sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) );
-}
 
-console.log(new Date());
-//let hello = getSetInterval(scheduleList[1]);
-
-//1675115
-
-var sig = getSignature(apiKey, secret);
-
-//http://api.stats.com/v1/stats/basketball/nba/events/1675115?languageId=15&pbp=true&accept=json&api_key=hrzct5ze45rs6vd5f7nuuyfn&sig=f307011ab653f5cdf221d709b67ec87e5aa9b9285c06fd7d5d4790cd9f3ad03b
-console.log(sig);
-var url = util.format(statsUrlFormats['basketballLiveFormat'], 1675115, apiKey, sig);
+var url = statsUrlFormats.getBasketballLiveUrl(1675115);
 console.log(url);
-crawler.parse(url, serviceFn );
+//crawler.parse(url, serviceFn );

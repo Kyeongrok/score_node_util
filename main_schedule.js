@@ -1,13 +1,10 @@
-//1번 작업
-//sig를 만듬
-//sig를 url에 붙허넣음
-//request함
-//파일로 저장함
-
-//2번 작업
-//파일을 열음
-//excel파일로 출력함
+/*
+1.url 추출
+2.url로 파일을 만듬
+3.excel로 저장
+*/
 
 const statsUrlFormats = require("./statsUrlFormats.js");
-//console.log(statsUrlFormats['basketballScheduleFormat'])
-console.log(statsUrlFormats.getBasketballScheduleUrl("2017-02-28", "2017-03-31"))
+
+statsBasketballScheduleUrl = statsUrlFormats.getBasketballScheduleUrl("2017-02-28", "2017-03-31");
+console.log(statsBasketballScheduleUrl);
