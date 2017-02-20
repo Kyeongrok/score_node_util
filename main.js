@@ -21,8 +21,6 @@ printFunctions1.printApiResults(16);
 
 //printFunctions1.printNflPlayDetail('stats_nfl_playDetail.json');
 
-
-
 var gamePrintFunctions_oct28 = new PrintFunctions("c:/git_bitbucket/score_parser/basketball_livescore/test_data/stats/livescore/oct_28/");
 //gamePrintFunctions_oct28.printFileList();
 //gamePrintFunctions_oct28.printTeamData("");
