@@ -15,10 +15,12 @@
   "homepage": "https://bitbucket.org/okiworks/node_json_handler#readme",
   "dependencies": {
     "crypto-js": "^3.1.9-1",
+    "exceljs": "^0.3.0",
     "js-sha256": "^0.5.0",
     "jsdom": "^9.8.3",
     "node-datetime": "^1.0.0",
     "node-telegram-bot-api": "^0.26.0",
+    "officegen": "^0.4.3",
     "request": "^2.79.0"
   }
 }
