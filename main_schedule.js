@@ -19,6 +19,8 @@ console.log(statsBaseballMlbScheduleUrl)
 statsBaseballNpbScheduleUrl = statsUrlFormats.getBaseballNpbScheduleUrl("2017-02-28", "2017-03-31");
 console.log(statsBaseballNpbScheduleUrl)
 
+statsFootballLiveUrl = statsUrlFormats.getFootballLiveUrl("123456");
+console.log(statsFootballLiveUrl);
 
 //파일을 연다
 var testDataLocation = "./data/";
@@ -26,6 +28,6 @@ var fh = new FileHandler(testDataLocation);
 var fileList = fh.fileList;
 console.log(fileList);
 
-var npbSchedule = fh.getFileContentsString(testDataLocation + "stats_npb_schedule_17021_170331.json");
-var mlbSchedule = fh.getFileContentsString(testDataLocation + "stats_mlb_schedule_17021_170331.json");
-excelExporter.scheduleExport(npb, "./npb.xlsx", "test");
+//var npbSchedule = fh.getFileContentsString(testDataLocation + "stats_npb_schedule_17021_170331.json");
+//var mlbSchedule = fh.getFileContentsString(testDataLocation + "stats_mlb_schedule_17021_170331.json");
+//excelExporter.scheduleExport(npb, "./npb.xlsx", "test");

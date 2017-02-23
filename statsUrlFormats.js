@@ -10,37 +10,19 @@ const formats = {
   ,"basketballScheduleFormat" : "http://api.stats.com/v1/stats/basketball/nba/events/?languageId=15&startDate=%s&endDate=%s&accept=json&api_key=%s&sig=%s"
   ,"baseballMlbScheduleFormat" : "http://api.stats.com/v1/stats/baseball/mlb/events/?languageId=15&startDate=%s&endDate=%s&accept=json&api_key=%s&sig=%s"
   ,"baseballNpbScheduleFormat" : "http://api.stats.com/v1/stats/baseball/npb/events/?languageId=15&startDate=%s&endDate=%s&accept=json&api_key=%s&sig=%s"
+  ,"baseballMlbLiveFormat" : "http://api.stats.com/v1/stats/baseball/mlb/events/%s?box=true&pbp=true&tvl=true&linescore=true&languageId=15&accept=json&api_key=%s&sig=%s"
 }
 
 //signature maker
-const getSignature = (apiKey, secret)=>{
-    return sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) );
-}
-
-const getFootballLiveUrl = (eventId)=>(
-  util.format(formats['footballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret))
-)
-
-const getBasketballScheduleUrl = (startDate, endDate)=>(
-  util.format(formats['basketballScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret))
-)
-const getBasketballLiveUrl = (eventId)=>(
-  util.format(formats['basketballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret))
-)
-
-const getBaseballMlbScheduleUrl = (startDate, endDate)=>(
-  util.format(formats['baseballMlbScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret))
-)
-
-const getBaseballNpbScheduleUrl = (startDate, endDate)=>(
-  util.format(formats['baseballNpbScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret))
-)
+const getSignature = (apiKey, secret)=>( sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) ))
 
 module.exports = {
-  getBasketballScheduleUrl:getBasketballScheduleUrl
-  ,getBasketballLiveUrl:getBasketballLiveUrl
-  ,getFootballLiveUrl:getFootballLiveUrl
-  ,getBaseballMlbScheduleUrl:getBaseballMlbScheduleUrl
-  ,getBaseballNpbScheduleUrl:getBaseballNpbScheduleUrl
+  getSignature:getSignature
+  ,getBasketballScheduleUrl:(startDate, endDate)=>( util.format(formats['basketballScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
+  ,getBasketballLiveUrl:(eventId)=>( util.format(formats['basketballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
+  ,getFootballLiveUrl:(eventId)=>(  util.format(formats['footballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
+  ,getBaseballMlbScheduleUrl:(startDate, endDate)=>( util.format(formats['baseballMlbScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
+  ,getBaseballNpbScheduleUrl:(startDate, endDate)=>( util.format(formats['baseballNpbScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
+  ,getBaseballMlbLiveUrl:(eventId)=>(  util.format(formats['baseballMlbLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
 
 };
