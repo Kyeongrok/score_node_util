@@ -30,6 +30,8 @@ let ExcelExporter = {
     return eventList;
   },
 
+
+
   exportToExcel:(fileName, sheetName, list)=>{
     var workbook = new Excel.Workbook();
     var worksheet = workbook.addWorksheet(sheetName);
@@ -53,6 +55,33 @@ let ExcelExporter = {
     workbook.xlsx.writeFile(fileName);
   },
 
+  extractScheduleJsonList:(events)=>{
+    let eventList = [];
+
+    for (var event of events){
+      let teamNickname = ""
+      let teamLocation = ""
+
+
+      try{
+        //npb는 draft 노드가 없어서 빼고 할 것
+        teamLocation = event['draft']['team']['location'];
+        teamNickname = event['draft']['team']['nickname'];
+      }catch(e){}
+
+      let item = {
+        "playerId":event['playerId']
+        ,"firstName":event['firstName']
+        ,"lastName":event['lastName']
+        ,"teamLocation":teamLocation
+        ,"teamNickname":teamNickname
+      }
+
+      eventList.push(item);
+    }
+    return eventList;
+  },
+
   scheduleExport:function(string, fileName, sheetName){
     var fh = new FileHandler("./");
     var json = fh.getJsonObject(string);
@@ -63,6 +92,17 @@ let ExcelExporter = {
     ExcelExporter.exportToExcel(fileName, sheetName, eventList);
 
   },
+
+  playerExport:(string, fileName, sheetName)=>{
+    var fh = new FileHandler("./");
+    var json = fh.getJsonObject(string);
+    let events = json['apiResults'][0]['league']['players'];
+    let eventList = ExcelExporter.extractScheduleJsonList(events);
+
+    //excel로 출력
+    ExcelExporter.exportToExcel(fileName, sheetName, eventList);
+
+  }
 
 }
 

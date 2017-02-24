@@ -17,7 +17,8 @@ const formats = {
 const getSignature = (apiKey, secret)=>( sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) ))
 
 module.exports = {
-  getSignature:getSignature
+  getSignature:getSignature(apiKey, secret)
+  ,getApikeySignature: "&api_key="+apiKey+"&sig="+getSignature(apiKey, secret)
   ,getBasketballScheduleUrl:(startDate, endDate)=>( util.format(formats['basketballScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
   ,getBasketballLiveUrl:(eventId)=>( util.format(formats['basketballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
   ,getFootballLiveUrl:(eventId)=>(  util.format(formats['footballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
