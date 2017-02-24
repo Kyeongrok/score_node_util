@@ -36,7 +36,7 @@ let serviceFn = (res)=>{
 let getSetInterval = (schedule)=>{
     //1.주소를 만든다
     return setInterval(()=>{
-      let url = statsUrlFormats.getFootballLiveUrl(schedule['eventId'])
+      let url = statsUrlFormats.getBaseballMlbLiveUrl(schedule['eventId'])
       let nowDate = new Date();
       let startDate = new Date(Date.UTC(schedule['sYear'], parseInt(schedule['sMonth'])-1, schedule['sDate'], schedule['sHour'],schedule['sMinute'],schedule['sSecond']));
       let endDate = new Date(Date.UTC(schedule['eYear'], parseInt(schedule['eMonth'])-1, schedule['eDate'], schedule['eHour'],schedule['eMinute'],schedule['eSecond']));

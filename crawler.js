@@ -22,7 +22,7 @@ const parse =(url, callback)=>{
           }
 
       }else{
-          //console.log('error' + response.statusCode);
+          console.log('error' + response.statusCode);
           console.log('error');
       }
   });
