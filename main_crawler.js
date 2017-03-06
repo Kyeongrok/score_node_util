@@ -13,30 +13,23 @@ var beforeMessage = "";
 var beforePbpLength = 0;
 
 let serviceFn = (res)=>{
-  //파일명 만드는 기능
-  //파일로 저장하는 기능
-  //let message = messageMakers.statsFootballMessageMaker(res);
-
-  let fileName = "./saved/baseball/" + dateTime.create().format('Y-m-d-H-M-S') + ".json";
+  let fileName = "./saved/baseball/espn/" + dateTime.create().format('Y-m-d-H-M-S') + ".html";
   crawler.writeFile(res, fileName);
-
-  //
-  // if(beforeMessage != message){
-  //   let fileName = "./saved/" + dateTime.create().format('Y-m-d-H-M-S') + ".json";
-  //   crawler.writeFile(res, fileName);
-  //   console.log(message);
-  //   bot.sendMessage("-202009157", message);
-  //   beforeMessage = message;
-  //   beforePbpLength = pbpLength;
-  // }
-  //
 }
 
+let serviceFn2 = (res)=>{
+  let fileName = "./saved/baseball/mlb/" + dateTime.create().format('Y-m-d-H-M-S') + ".json";
+  crawler.writeFile(res, fileName);
+}
+
+let getUrl = (eventId)=>("http://www.espn.com/mlb/playbyplay?gameId=" + eventId)
+let getUrl2 = (eventId)=>("http://statsapi.mlb.com/api/v1/game/" +eventId+ "/feed/live?language=en" )
+
 //2.parse를 호출한다. callback으로 fileWriter를 넘긴다.
-let getSetInterval = (schedule)=>{
+let getSetInterval = (schedule, serviceFn, urlGetter)=>{
     //1.주소를 만든다
     return setInterval(()=>{
-      let url = statsUrlFormats.getBaseballMlbLiveUrl(schedule['eventId'])
+      let url = urlGetter( schedule['eventId'] )
       let nowDate = new Date();
       let startDate = new Date(Date.UTC(schedule['sYear'], parseInt(schedule['sMonth'])-1, schedule['sDate'], schedule['sHour'],schedule['sMinute'],schedule['sSecond']));
       let endDate = new Date(Date.UTC(schedule['eYear'], parseInt(schedule['eMonth'])-1, schedule['eDate'], schedule['eHour'],schedule['eMinute'],schedule['eSecond']));
@@ -55,10 +48,10 @@ let getSetInterval = (schedule)=>{
 
 
 console.log(new Date())
-//console.log(scheduleList['scheduleList'][2])
-console.log(statsUrlFormats.getBasketballScheduleUrl("2017-02-23", "2017-02-24"))
-console.log(statsUrlFormats.getBaseballMlbLiveUrl("1705947"))
 
-mlb_170224180500 = getSetInterval(scheduleList['scheduleList'][2]);
+mlb_espn = getSetInterval(scheduleList['scheduleList'][3], serviceFn, getUrl);
+mlb_mlb = getSetInterval(scheduleList['scheduleList'][4], serviceFn2, getUrl2);
+//509566
 
-///forever start -o /var/www/score_node_util/out.log main_crawler.jsnode /var/www/score_node_util/out.log -o /var/www/score_node_util/out.log main_crawler.js
+///forever start -o /var/www/score_node_util/out.log main_crawler.js
+//node /var/www/score_node_util/out.log -o /var/www/score_node_util/out.log main_crawler.js
