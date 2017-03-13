@@ -18,7 +18,7 @@ var FileHandler = function(s_dir){
 
 	//return 해당 fileName의 file string
 	this.getNFileContentsString = function(i_n){
-		var fileLocation = this.testDataLocation + this.fileList[i_n]
+		var fileLocation = this.testDataLocation + this.fileList[i_n];
 		var file = fs.readFileSync(fileLocation);
 	  	return file.toString();
 	};
@@ -32,7 +32,7 @@ var FileHandler = function(s_dir){
 		}catch(e){
 			return {};
 		}
-	}
+	};
 
 	this.getJsonObject = function(s_json){
 		var jsonObject;
@@ -43,6 +43,6 @@ var FileHandler = function(s_dir){
 			return {};
 		}
 	}
-}
+};
 
 module.exports = FileHandler;

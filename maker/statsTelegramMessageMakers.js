@@ -25,12 +25,12 @@ let statsFootballMessageMaker = (res)=>{
   ;
 
   return message;
-}
+};
 
 const statsBaseballLiveMessageMaker =(jsonString)=>{
   let message = "";
 
   return message;
-}
+};
 exports.statsFootballMessageMaker = statsFootballMessageMaker;
 exports.statsBaseballLiveMessageMaker = statsBaseballLiveMessageMaker;

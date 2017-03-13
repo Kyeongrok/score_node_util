@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Excel = require('exceljs');
-const FileHandler = require('./FileHandler.js');
+const FileHandler = require('./../handler/FileHandler.js');
 
 let ExcelExporter = {
 
@@ -10,8 +10,8 @@ let ExcelExporter = {
     for (var event of events){
 
       //utc +9하기
-      let date = new Date(event['startDate'][1]['full'])
-      date.setHours(date.getHours() + 9)
+      let date = new Date(event['startDate'][1]['full']);
+      date.setHours(date.getHours() + 9);
 
       let item = {
         "eventId":event['eventId']
@@ -23,7 +23,7 @@ let ExcelExporter = {
         ,"hour":event['startDate'][1]['hour']
         ,"minute":event['startDate'][1]['minute']
         ,"full":date.toGMTString()
-      }
+      };
 
       eventList.push(item);
     }
@@ -35,7 +35,7 @@ let ExcelExporter = {
   exportToExcel:(fileName, sheetName, list)=>{
     var workbook = new Excel.Workbook();
     var worksheet = workbook.addWorksheet(sheetName);
-    var columnList = []
+    var columnList = [];
 
     //header만듬
     for(var field in list[0]){
@@ -59,8 +59,8 @@ let ExcelExporter = {
     let eventList = [];
 
     for (var event of events){
-      let teamNickname = ""
-      let teamLocation = ""
+      let teamNickname = "";
+      let teamLocation = "";
 
 
       try{
@@ -75,7 +75,7 @@ let ExcelExporter = {
         ,"lastName":event['lastName']
         ,"teamLocation":teamLocation
         ,"teamNickname":teamNickname
-      }
+      };
 
       eventList.push(item);
     }
@@ -104,6 +104,6 @@ let ExcelExporter = {
 
   }
 
-}
+};
 
 module.exports = ExcelExporter;

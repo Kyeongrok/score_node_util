@@ -26,7 +26,7 @@ const parse =(url, callback)=>{
           console.log('error');
       }
   });
-}
+};
 
 //text를 지정한 파일경로에 쓴다.
 const writeFile = (text, targetFileName)=>{
@@ -36,7 +36,7 @@ const writeFile = (text, targetFileName)=>{
     }
     console.log(targetFileName + " was saved!");
   });
-}
+};
 
 exports.parse = parse;
 exports.writeFile = writeFile;

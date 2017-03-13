@@ -1,23 +1,24 @@
 
-var FileHandler = require('./FileHandler.js');
+let FileHandler = require('./FileHandler.js');
 
 module.exports = function(testDataLocation){
-	var fh = new FileHandler(testDataLocation);
-	var fileList = fh.fileList;
+	let fh = new FileHandler(testDataLocation);
+	let fileList = fh.fileList;
 
+	let jsonString = "";
 
 	this.printPlayDetail = function(s_fileName){
-		var location = testDataLocation + s_fileName;
+		let location = testDataLocation + s_fileName;
 		console.log(location);
 
 		jsonString = fh.getFileContentsString(location);
 
-		var jsonObject = fh.getJsonObject(jsonString);
-		var sport =jsonObject['sport'];
-		var playEvents = sport['league']['playEvents']['playEvent'];
+		let jsonObject = fh.getJsonObject(jsonString);
+		let sport =jsonObject['sport'];
+		let playEvents = sport['league']['playEvents']['playEvent'];
 
-		for(var playEvent of playEvents ){
-			var result = "";
+		for(let playEvent of playEvents ){
+			let result = "";
 			result += playEvent['playEventId'];
 			result += ", " +playEvent['name'];
 			result += ", " +playEvent['playDetail']['playDetailId'];
@@ -27,61 +28,69 @@ module.exports = function(testDataLocation){
 		}
 
 		//console.log(playEvents);
-	}
+	};
 
 	this.printNflPlayDetail = function(s_fileName){
-		var location = testDataLocation + s_fileName;
+		let location = testDataLocation + s_fileName;
 		console.log(location);
 
 		jsonString = fh.getFileContentsString(location);
 
-		var jsonObject = fh.getJsonObject(jsonString);
-		var apiResults =jsonObject['apiResults']
-		var playTypes =apiResults['playTypes']
+		let jsonObject = fh.getJsonObject(jsonString);
+		let apiResults =jsonObject['apiResults'];
+		let playTypes =apiResults['playTypes'];
 
-		for(var item of playTypes){
+		for(let item of playTypes){
 			console.log(item['playTypeId'] + ", " + item['name']);
 		}
 
-	}
+	};
 
 
 	this.printTeamData = function(s_fileName){
-		var location = testDataLocation + s_fileName;
+		let location = testDataLocation + s_fileName;
 		console.log(location);
 
 		jsonString = fh.getFileContentsString(location);
 
-		var jsonObject = fh.getJsonObject(jsonString);
-		var apiResult =jsonObject['apiResults'][0]
-		var league = apiResult['league'];
-		var conferences = league['season']['conferences'];
-		var estern = conferences[0]['divisions'];
-		var western = conferences[1]['divisions'];
+		let jsonObject = fh.getJsonObject(jsonString);
+		let apiResult =jsonObject['apiResults'][0];
+		let league = apiResult['league'];
+		let conferences = league['season']['conferences'];
+		let eastern = conferences[0]['divisions'];
+		let western = conferences[1]['divisions'];
 
-		for(var item of estern){
+		for(let item of eastern){
 
-			for(var team of item['teams']){
-				result = "";
-				result += item['name'] + ",";
-				result += team['abbreviation'] + ",";
-				result += team['teamId']+"," + team['location'] + ",";
+			for(let team of item['teams']){
+				//noinspection JSUndeclaredVariable
+                result = "";
+				//noinspection JSUndeclaredVariable
+                result += item['name'] + ",";
+				//noinspection JSUndeclaredVariable
+                result += team['abbreviation'] + ",";
+				//noinspection JSUndeclaredVariable
+                result += team['teamId']+"," + team['location'] + ",";
 				console.log(result);
 			}
 		}
 
-		for(var item of western){
-			for(var team of item['teams']){
+		for(let item of western){
+			for(let team of item['teams']){
 				//console.log(team);
-				result = "";
-				result += item['name'] + ",";
-				result += team['abbreviation'] + ",";
-				result += team['teamId']+"," + team['location'] + ",";
+				//noinspection JSUndeclaredVariable
+                result = "";
+				//noinspection JSUndeclaredVariable
+                result += item['name'] + ",";
+				//noinspection JSUndeclaredVariable
+                result += team['abbreviation'] + ",";
+				//noinspection JSUndeclaredVariable
+                result += team['teamId']+"," + team['location'] + ",";
 				console.log(result);
 			}
 		}
 
-	}
+	};
 
 
 	//
@@ -89,15 +98,15 @@ module.exports = function(testDataLocation){
 		console.log("--------" + fileList[index] + "---------");
 		jsonString = fh.getNFileContentsString(index);
 
-		var jsonObject = fh.getJsonObject(jsonString);
-		var apiResult =jsonObject['apiResults'][0]
-		var league = apiResult['league'];
-		var players = league['players'];
+		let jsonObject = fh.getJsonObject(jsonString);
+		let apiResult =jsonObject['apiResults'][0];
+		let league = apiResult['league'];
+		let players = league['players'];
 
 
-		for (var player of players){
+		for (let player of players){
 			console.log(player);
-			var result = "";
+			let result = "";
 			result += player['playerId'] + ",";
 			result += player['team']['abbreviation'] + ",";
 			result += player['firstName'] + " ";
@@ -106,50 +115,50 @@ module.exports = function(testDataLocation){
 			console.log(result);
 		}
 
-	}
+	};
 
 	this.printHockeyGameSchedule = function(index) {
 		jsonString = fh.getNFileContentsString(index);
 		// console.log(jsonString);
-		var jsonObject = fh.getJsonObject(jsonString);
+		let jsonObject = fh.getJsonObject(jsonString);
 
-		var apiResults = jsonObject['apiResults'][0];
-		var league = apiResults['league'];
-		var season = league['season'];
-		var eventType = season['eventType'][0]
-		var events = eventType['events'];
+		let apiResults = jsonObject['apiResults'][0];
+		let league = apiResults['league'];
+		let season = league['season'];
+		let eventType = season['eventType'][0];
+		let events = eventType['events'];
 
-		var result = "";
+		let result = "";
 
-		for(var item of events) {
+		for(let item of events) {
 				result += item['eventId'] + ",";
 				result += item['teams'][0]['nickname'] + " vs " + item['teams'][1]['nickname'] + ",";
-				var startDateUTC = item['startDate'][1];
+				let startDateUTC = item['startDate'][1];
 				result += startDateUTC['year'] + "-" + startDateUTC['month'] + "-" + startDateUTC['date'] + ",";
 				result += startDateUTC['hour'] + ":" + startDateUTC['minute'] + "\n";
 
 		}
 		console.log(result);
-	}
+	};
 
 	this.printFileList=()=>{
 		//file list 출력
 		console.log(fileList.length);
 		console.log(fileList);
-	}
+	};
 
 	this.printApiResults =(index)=>{
 
 		console.log("--------" + fileList[index] + "---------");
 		jsonString = fh.getNFileContentsString(index);
-		var jsonObject = fh.getJsonObject(jsonString);
-		var events =jsonObject['apiResults'][0]['league']['season']['eventType'][0]['events'];
+		let jsonObject = fh.getJsonObject(jsonString);
+		let events =jsonObject['apiResults'][0]['league']['season']['eventType'][0]['events'];
 
 
-		for(var event of events){
+		for(let event of events){
 			//console.log(event);
 
-			var result = "";
+			let result = "";
 			result += event['eventId'];
 
 
@@ -165,17 +174,18 @@ module.exports = function(testDataLocation){
 
 
 
-	}
+	};
 
 	//경기 데이터 출력하는 기능
 	this.printGameData = function( start_num, end_num){
-		for(var i = start_num ; i < end_num; i++){
+		for(let i = start_num ; i < end_num; i++){
 
 			//console.log("--------" + fileList[i] + "---------");
-			jsonString_a = fh.getNFileContentsString(i);
+			//noinspection JSUndeclaredVariable
+            jsonString_a = fh.getNFileContentsString(i);
 
-			var jsonObject = fh.getJsonObject(jsonString_a);
-			var events;
+			let jsonObject = fh.getJsonObject(jsonString_a);
+			let events;
 			try{
 				events =jsonObject['apiResults'][0]['league']['season']['eventType'][0]['events'];
 			}catch(e){
@@ -183,17 +193,17 @@ module.exports = function(testDataLocation){
 			}
 
 
-			var pbp = events[0]['pbp'];
+			let pbp = events[0]['pbp'];
 
 			//console.log(pbp);
 			console.log(pbp.length);
 
 
-			for (var item of pbp){
+			for (let item of pbp){
 				//console.log(item);
 
 
-				var printContents = "";
+				let printContents = "";
 				printContents += item['playId'];
 				printContents += ","+ item['period'];
 				printContents += ","+ item['teamId'];
@@ -235,4 +245,4 @@ module.exports = function(testDataLocation){
 			}
 		}
 	}
-}
+};

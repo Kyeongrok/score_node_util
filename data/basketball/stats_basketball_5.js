@@ -270,6 +270,6 @@ var stats_basketball_5 = {
             }
         }
     }]
-}
+};
 
 module.exports = stats_basketball_5;

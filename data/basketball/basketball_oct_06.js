@@ -1,9 +1,9 @@
-var stats_basketball = {
+let basketball_oct_06 = {
     "status": "OK",
     "recordCount": 6,
-    "startTimestamp": "2016-10-05T07:26:00.7273574Z",
-    "endTimestamp": "2016-10-05T07:26:00.7898558Z",
-    "timeTaken": 0.062498399999999996,
+    "startTimestamp": "2016-10-07T02:31:33.1187974Z",
+    "endTimestamp": "2016-10-07T02:31:33.1812974Z",
+    "timeTaken": 0.0625,
     "apiResults": [{
         "sportId": 1,
         "name": "Basketball",
@@ -40,13 +40,14 @@ var stats_basketball = {
                         }],
                         "isTba": false,
                         "isDataConfirmed": {
-                            "score": false
+                            "score": true
                         },
                         "scheduledPeriods": 4,
                         "eventStatus": {
-                            "eventStatusId": 1,
+                            "eventStatusId": 4,
+                            "period": 4,
                             "isActive": false,
-                            "name": "Pre-Game"
+                            "name": "Final"
                         },
                         "venue": {
                             "venueId": 11,
@@ -87,11 +88,12 @@ var stats_basketball = {
                                 "name": "home"
                             },
                             "record": {
-                                "wins": 1,
+                                "wins": 2,
                                 "losses": 0,
                                 "percentage": " 1.000"
                             },
-                            "isWinner": false
+                            "score": 115,
+                            "isWinner": true
                         }, {
                             "teamId": 4,
                             "location": "시카고 ",
@@ -103,9 +105,10 @@ var stats_basketball = {
                             },
                             "record": {
                                 "wins": 0,
-                                "losses": 1,
+                                "losses": 2,
                                 "percentage": "  .000"
                             },
+                            "score": 108,
                             "isWinner": false
                         }],
                         "coverageLevel": {
@@ -134,13 +137,16 @@ var stats_basketball = {
                         }],
                         "isTba": false,
                         "isDataConfirmed": {
-                            "score": false
+                            "score": true
                         },
                         "scheduledPeriods": 4,
                         "eventStatus": {
-                            "eventStatusId": 1,
+                            "eventStatusId": 4,
+                            "period": 6,
+                            "minutes": 0,
+                            "seconds": "0.0",
                             "isActive": false,
-                            "name": "Pre-Game"
+                            "name": "Final"
                         },
                         "venue": {
                             "venueId": 20,
@@ -172,6 +178,7 @@ var stats_basketball = {
                                 "losses": 0,
                                 "percentage": " 1.000"
                             },
+                            "score": 119,
                             "isWinner": false
                         }, {
                             "teamId": 27,
@@ -187,7 +194,8 @@ var stats_basketball = {
                                 "losses": 1,
                                 "percentage": "  .000"
                             },
-                            "isWinner": false
+                            "score": 125,
+                            "isWinner": true
                         }],
                         "coverageLevel": {
                             "coverageLevelId": 3,
@@ -215,13 +223,14 @@ var stats_basketball = {
                         }],
                         "isTba": false,
                         "isDataConfirmed": {
-                            "score": false
+                            "score": true
                         },
                         "scheduledPeriods": 4,
                         "eventStatus": {
-                            "eventStatusId": 1,
+                            "eventStatusId": 4,
+                            "period": 4,
                             "isActive": false,
-                            "name": "Pre-Game"
+                            "name": "Final"
                         },
                         "venue": {
                             "venueId": 10615,
@@ -249,10 +258,12 @@ var stats_basketball = {
                                 "name": "home"
                             },
                             "record": {
-                                "wins": 0,
-                                "losses": 0
+                                "wins": 1,
+                                "losses": 0,
+                                "percentage": " 1.000"
                             },
-                            "isWinner": false
+                            "score": 101,
+                            "isWinner": true
                         }, {
                             "teamId": 8,
                             "location": "디트로이트 ",
@@ -264,8 +275,10 @@ var stats_basketball = {
                             },
                             "record": {
                                 "wins": 0,
-                                "losses": 0
+                                "losses": 1,
+                                "percentage": "  .000"
                             },
+                            "score": 94,
                             "isWinner": false
                         }],
                         "coverageLevel": {
@@ -294,13 +307,14 @@ var stats_basketball = {
                         }],
                         "isTba": false,
                         "isDataConfirmed": {
-                            "score": false
+                            "score": true
                         },
                         "scheduledPeriods": 4,
                         "eventStatus": {
-                            "eventStatusId": 1,
+                            "eventStatusId": 4,
+                            "period": 4,
                             "isActive": false,
-                            "name": "Pre-Game"
+                            "name": "Final"
                         },
                         "venue": {
                             "venueId": 1906,
@@ -329,9 +343,10 @@ var stats_basketball = {
                             },
                             "record": {
                                 "wins": 0,
-                                "losses": 1,
+                                "losses": 2,
                                 "percentage": "  .000"
                             },
+                            "score": 92,
                             "isWinner": false
                         }, {
                             "teamId": 2,
@@ -343,11 +358,12 @@ var stats_basketball = {
                                 "name": "away"
                             },
                             "record": {
-                                "wins": 0,
+                                "wins": 1,
                                 "losses": 1,
-                                "percentage": "  .000"
+                                "percentage": "  .500"
                             },
-                            "isWinner": false
+                            "score": 107,
+                            "isWinner": true
                         }],
                         "coverageLevel": {
                             "coverageLevelId": 3,
@@ -375,13 +391,16 @@ var stats_basketball = {
                         }],
                         "isTba": false,
                         "isDataConfirmed": {
-                            "score": false
+                            "score": true
                         },
                         "scheduledPeriods": 4,
                         "eventStatus": {
-                            "eventStatusId": 1,
+                            "eventStatusId": 4,
+                            "period": 4,
+                            "minutes": 0,
+                            "seconds": "0.0",
                             "isActive": false,
-                            "name": "Pre-Game"
+                            "name": "Final"
                         },
                         "venue": {
                             "venueId": 4265,
@@ -413,6 +432,7 @@ var stats_basketball = {
                                 "losses": 0,
                                 "percentage": " 1.000"
                             },
+                            "score": 83,
                             "isWinner": false
                         }, {
                             "teamId": 1,
@@ -427,7 +447,8 @@ var stats_basketball = {
                                 "wins": 0,
                                 "losses": 0
                             },
-                            "isWinner": false
+                            "score": 104,
+                            "isWinner": true
                         }],
                         "coverageLevel": {
                             "coverageLevelId": 3,
@@ -520,6 +541,6 @@ var stats_basketball = {
             }
         }
     }]
-}
+};
 
-module.exports = stats_basketball;
+module.exports = basketball_oct_06;

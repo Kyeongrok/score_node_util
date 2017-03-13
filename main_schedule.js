@@ -5,8 +5,8 @@
 3.excel로 저장
 */
 
-var FileHandler = require('./FileHandler.js');
-const excelExporter = require("./ExcelExporter.js")
+var FileHandler = require('./handler/FileHandler.js');
+const excelExporter = require("./exporter/ExcelExporter.js");
 
 const statsUrlFormats = require("./statsUrlFormats.js");
 
@@ -14,10 +14,10 @@ statsBasketballScheduleUrl = statsUrlFormats.getBasketballScheduleUrl("2017-02-2
 console.log(statsBasketballScheduleUrl);
 
 statsBaseballMlbScheduleUrl = statsUrlFormats.getBaseballMlbScheduleUrl("2017-02-28", "2017-03-31");
-console.log(statsBaseballMlbScheduleUrl)
+console.log(statsBaseballMlbScheduleUrl);
 
 statsBaseballNpbScheduleUrl = statsUrlFormats.getBaseballNpbScheduleUrl("2017-02-28", "2017-03-31");
-console.log(statsBaseballNpbScheduleUrl)
+console.log(statsBaseballNpbScheduleUrl);
 
 statsFootballLiveUrl = statsUrlFormats.getFootballLiveUrl("123456");
 console.log(statsFootballLiveUrl);
@@ -36,7 +36,7 @@ var fileList = fh.fileList;
 
 //var npbSchedule = fh.getFileContentsString(testDataLocation + "stats_npb_schedule_17021_170331.json");
 //var mlbSchedule = fh.getFileContentsString(testDataLocation + "stats_mlb_schedule_17021_170331.json");
-//excelExporter.scheduleExport(npb, "./npb.xlsx", "test");
+//excelExporter.scheduleExport(npb, "./stats_npb_2017mar.xlsx", "test");
 
 
 var mlbPlayers = fh.getFileContentsString(testDataLocation + "stats_mlb_players.json");
