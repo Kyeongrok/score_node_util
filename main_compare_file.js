@@ -6,7 +6,7 @@ const path = "C:/Users/kyeongrok.kim/Desktop/baseball/mlb/";
 
 //compareUtil.processAndSave(path)
 //파일 경로를 넘기면 해당 위치에 있는 파일을 이전 파일과 비교해서 지울건 지움
-//compareUtil.compareAndDelete("C:/Users/kyeongrok.kim/Desktop/baseball/mlb/")
+//compareUtil.compare1AndDelete("C:/Users/kyeongrok.kim/Desktop/baseball/mlb/")
 
 
 //파일 열어서 메세지 만든다.

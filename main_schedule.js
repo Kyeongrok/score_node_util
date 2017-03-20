@@ -5,7 +5,7 @@
 3.excel로 저장
 */
 
-var FileHandler = require('./handler/FileHandler.js');
+let FileHandler = require('./handler/FileHandler.js');
 const excelExporter = require("./exporter/ExcelExporter.js");
 
 const statsUrlFormats = require("./statsUrlFormats.js");
@@ -28,10 +28,10 @@ console.log("http://api.stats.com/v1/" + "stats/baseball/npb/participants/?accep
 console.log("http://api.stats.com/v1/" + "decode/baseball/mlb/playDetails/?accept=json"+statsUrlFormats.getApikeySignature);
 
 //파일을 연다
-var basePath = "c:/git_bitbucket/score_node_util";
-var testDataLocation = basePath + "/data/";
-var fh = new FileHandler(testDataLocation);
-var fileList = fh.fileList;
+let basePath = "c:/git_bitbucket/score_node_util";
+let testDataLocation = basePath + "/data/";
+let fh = new FileHandler(testDataLocation);
+let fileList = fh.fileList;
 //console.log(fileList);
 
 //var npbSchedule = fh.getFileContentsString(testDataLocation + "stats_npb_schedule_17021_170331.json");
@@ -39,7 +39,7 @@ var fileList = fh.fileList;
 //excelExporter.scheduleExport(npb, "./stats_npb_2017mar.xlsx", "test");
 
 
-var mlbPlayers = fh.getFileContentsString(testDataLocation + "stats_mlb_players.json");
-var npbPlayers = fh.getFileContentsString(testDataLocation + "stats_npb_players.json");
+let mlbPlayers = fh.getFileContentsString(testDataLocation + "stats_mlb_players.json");
+let npbPlayers = fh.getFileContentsString(testDataLocation + "stats_npb_players.json");
 //excelExporter.playerExport(mlbPlayers, basePath+"/stats_mlb_players.xlsx", "players");
 //excelExporter.playerExport(npbPlayers, basePath+"/stats_npb_players.xlsx", "players");

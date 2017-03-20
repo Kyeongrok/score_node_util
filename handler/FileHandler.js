@@ -8,8 +8,10 @@ var FileHandler = function(s_dir){
   		return this.fileList;
 	};
 
-	//param fileLocationName
-	//return file contents string
+    /**
+     *
+     * @param s_fileLocationName
+     */
 	this.getFileContentsString = function(s_fileLocationName) {
 		console.log(s_fileLocationName);
 		var file = fs.readFileSync(s_fileLocationName);
