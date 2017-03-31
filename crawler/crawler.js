@@ -7,6 +7,7 @@ var request = require('request');
 var fs = require("fs");
 
 const parse =(url, callback)=>{
+  console.log(url);
   request({
       url: url,
       method: "GET",
@@ -16,6 +17,7 @@ const parse =(url, callback)=>{
   },(error, response, body)=>{
       if(!error && response.statusCode == 200){
           try{
+              console.log("response 200 ok");
               callback(body);
           }catch(e){
               console.log(e);

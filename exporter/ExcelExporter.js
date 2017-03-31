@@ -82,11 +82,19 @@ let ExcelExporter = {
     return eventList;
   },
 
+
+    /**
+     * @param string
+     * @param fileName
+     * @param sheetName
+     */
   scheduleExport:function(string, fileName, sheetName){
     var fh = new FileHandler("./");
     var json = fh.getJsonObject(string);
     let events = json['apiResults'][0]['league']['season']['eventType'][0]['events'];
     let eventList = ExcelExporter.extractJsonList(events);
+
+        console.log(eventList);
 
     //excel로 출력
     ExcelExporter.exportToExcel(fileName, sheetName, eventList);
