@@ -15,17 +15,17 @@ const formats = {
 };
 
 //signature maker
-const getSignature = (apiKey, secret)=>( sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) ));
+const makeSignature = (apiKey, secret)=>( sha256(apiKey + secret +  Math.floor((new Date().getTime()) / 1000) ));
 
 module.exports = {
-  getSignature:getSignature(apiKey, secret)
-  ,getApikeySignature: "&api_key="+apiKey+"&sig="+getSignature(apiKey, secret)
-  ,getBasketballScheduleUrl:(startDate, endDate)=>( util.format(formats['basketballScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
-  ,getBasketballLiveUrl:(eventId)=>( util.format(formats['basketballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
-  ,getFootballLiveUrl:(eventId)=>(  util.format(formats['footballLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
-  ,getBaseballMlbScheduleUrl:(startDate, endDate)=>( util.format(formats['baseballMlbScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
-  ,getBaseballNpbScheduleUrl:(startDate, endDate)=>( util.format(formats['baseballNpbScheduleFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
-  ,getBaseballMlbLiveUrl:(eventId)=>(  util.format(formats['baseballMlbLiveFormat'], eventId, apiKey, getSignature(apiKey, secret)) )
-  ,getHockeyNhlLiveUrl:(startDate, endDate)=>(  util.format(formats['hockeyNhlLiveFormat'], startDate, endDate, apiKey, getSignature(apiKey, secret)) )
+  getSignature:makeSignature(apiKey, secret)
+  ,getApikeySignature: "&api_key="+apiKey+"&sig="+makeSignature(apiKey, secret)
+  ,getBasketballScheduleUrl:(startDate, endDate)=>( util.format(formats['basketballScheduleFormat'], startDate, endDate, apiKey, makeSignature(apiKey, secret)) )
+  ,getBasketballLiveUrl:(eventId)=>( util.format(formats['basketballLiveFormat'], eventId, apiKey, makeSignature(apiKey, secret)) )
+  ,getFootballLiveUrl:(eventId)=>(  util.format(formats['footballLiveFormat'], eventId, apiKey, makeSignature(apiKey, secret)) )
+  ,getBaseballMlbScheduleUrl:(startDate, endDate)=>( util.format(formats['baseballMlbScheduleFormat'], startDate, endDate, apiKey, makeSignature(apiKey, secret)) )
+  ,getBaseballNpbScheduleUrl:(startDate, endDate)=>( util.format(formats['baseballNpbScheduleFormat'], startDate, endDate, apiKey, makeSignature(apiKey, secret)) )
+  ,getBaseballMlbLiveUrl:(eventId)=>(  util.format(formats['baseballMlbLiveFormat'], eventId, apiKey, makeSignature(apiKey, secret)) )
+  ,getHockeyNhlLiveUrl:(startDate, endDate)=>(  util.format(formats['hockeyNhlLiveFormat'], startDate, endDate, apiKey, makeSignature(apiKey, secret)) )
 
 };
