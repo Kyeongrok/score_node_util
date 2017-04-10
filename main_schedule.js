@@ -26,17 +26,16 @@ const statsScheduleFileSave = (url, targetFileName, sheetName) => {
 };
 let statsBaseballMlbScheduleUrl = statsUrlFormats.getBaseballMlbScheduleUrl("2017-04-01", "2017-04-30");
 let statsHockeyNhlScheduleUrl = statsUrlFormats.getHockeyNhlLiveUrl("2017-04-01", "2017-04-30");
-
+let statsBasketballNbaScheduleUrl = statsUrlFormats.getBasketballScheduleUrl("2017-04-01", "2017-04-30");
 
 let npbScheduleString = fh.getFileContentsString(testDataLocation + "baseball/" +"stats_npb_schedule_04.json");
 //excelExporter.scheduleExport(npbScheduleString, "stats_npb_schedule_04.xlsx", "sheet1");
 
+let nhlScheduleString = fh.getFileContentsString(testDataLocation + "icehockey/" +"stats_icehockey_04_po.json");
+//excelExporter.scheduleExport(nhlScheduleString, "stats_icehockey_04_po.xlsx", "sheet1");
+
 console.log(statsHockeyNhlScheduleUrl);
 console.log(statsBaseballMlbScheduleUrl);
-
-let nhlScheduleString = fh.getFileContentsString(testDataLocation + "icehockey/" +"stats_icehockey_04_po.json");
-excelExporter.scheduleExport(nhlScheduleString, "stats_icehockey_04_po.xlsx", "sheet1");
-
-
 console.log(statsBaseballNpbScheduleUrl);
+console.log(statsBasketballNbaScheduleUrl);
 
