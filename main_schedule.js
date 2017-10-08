@@ -15,8 +15,6 @@ let testDataLocation = basePath + "/data/";
 let fh = new FileHandler(testDataLocation);
 
 let statsBasketballScheduleUrl = statsUrlFormats.getBasketballScheduleUrl("2017-02-28", "2017-03-31");
-let statsBaseballNpbScheduleUrl = statsUrlFormats.getBaseballNpbScheduleUrl("2017-04-01", "2017-04-30");
-let statsFootballLiveUrl = statsUrlFormats.getFootballLiveUrl("123456");
 
 let scheduleExporter = (string)=>excelExporter.scheduleExport(string, targetFileName, sheetName);
 

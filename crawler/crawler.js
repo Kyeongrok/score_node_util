@@ -41,4 +41,5 @@ const writeFile = (text, targetFileName)=>{
 };
 
 exports.parse = parse;
+exports.crawl = parse;
 exports.writeFile = writeFile;
