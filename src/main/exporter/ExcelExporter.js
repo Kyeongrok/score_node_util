@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Excel = require('exceljs');
-const FileHandler = require('./../handler/FileHandler.js');
+const FileHandler = require('../handler/FileHandler.js');
 
 let ExcelExporter = {
 

@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "schedule_run":"node main_schedule.js"
+    "schedule_run": "node main_schedule.js"
   },
   "repository": {
     "type": "git",

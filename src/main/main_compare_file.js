@@ -1,5 +1,5 @@
 const fs = require("fs");
-const compareUtil = require("./util/compareUtil");
+const compareUtil = require("../../util/compareUtil");
 
 const path = "C:/Users/kyeongrok.kim/Desktop/baseball/mlb/";
 //const fileName = "2017-03-07-01-46-16.json";

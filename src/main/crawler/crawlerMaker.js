@@ -6,8 +6,7 @@ var http = require('http');
 var request = require('request');
 var fs = require("fs");
 
-const parse =(url, callback)=>{
-  console.log(url);
+const getCrawler = (callback) => (url)=>{
   request({
       url: url,
       method: "GET",
@@ -17,8 +16,9 @@ const parse =(url, callback)=>{
   },(error, response, body)=>{
       if(!error && response.statusCode == 200){
           try{
-              console.log("response 200 ok");
-              callback(body);
+            // console.log("response 200 ok");
+            new Promise(resolve => resolve(body))
+              .then(result => callback(result));
           }catch(e){
               console.log(e);
           }
@@ -40,6 +40,6 @@ const writeFile = (text, targetFileName)=>{
   });
 };
 
-exports.parse = parse;
-exports.crawl = parse;
+exports.getCrawler = getCrawler;
+exports.crawl = getCrawler;
 exports.writeFile = writeFile;

@@ -1,5 +1,5 @@
 const statsUrlFormats = require("./statsUrlFormats.js");
-const crawler = require("./crawler/crawler.js");
+const crawler = require("./crawler/crawlerMaker.js");
 const dateTime = require("node-datetime");
 
 const crawl = (makeUrl, fileNameCreator) => () => {
