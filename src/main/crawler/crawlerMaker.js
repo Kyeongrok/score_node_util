@@ -6,7 +6,7 @@ var http = require('http');
 var request = require('request');
 var fs = require("fs");
 
-const getCrawler = (callback) => (url)=>{
+const getCrawler = (callback) => (url, i)=>{
   request({
       url: url,
       method: "GET",
@@ -18,7 +18,7 @@ const getCrawler = (callback) => (url)=>{
           try{
             // console.log("response 200 ok");
             new Promise(resolve => resolve(body))
-              .then(result => callback(result));
+              .then(result => callback(result, i));
           }catch(e){
               console.log(e);
           }

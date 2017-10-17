@@ -2,7 +2,11 @@
 
 json data 핸들링을 위한 node 유틸
 
-
+### 사용법
+<pre>
+    npm install
+    
+</pre>
 
 ### How do I get set up? ###
 
