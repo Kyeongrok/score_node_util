@@ -1,6 +1,6 @@
 
-var fs = require('fs');
-var FileHandler = function(s_dir){
+const fs = require('fs');
+const FileHandler = (s_dir) => {
 	this.testDataLocation = s_dir;
 	this.fileList = fs.readdirSync( s_dir );
 
@@ -12,7 +12,7 @@ var FileHandler = function(s_dir){
      *
      * @param s_fileLocationName
      */
-	this.getFileContentsString = function(s_fileLocationName) {
+	this.getFileContentsString = (s_fileLocationName) => {
 		console.log(s_fileLocationName);
 		var file = fs.readFileSync(s_fileLocationName);
 		return file.toString();
