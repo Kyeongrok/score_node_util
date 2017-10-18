@@ -23,7 +23,7 @@
     "node-datetime": "^1.0.0",
     "node-telegram-bot-api": "^0.26.0",
     "officegen": "^0.4.3",
-    "request": "^2.79.0",
+    "request": "^2.83.0",
     "sync-request": "^4.1.0"
   }
 }
