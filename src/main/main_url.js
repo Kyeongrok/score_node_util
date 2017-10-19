@@ -3,5 +3,5 @@ let statsBasketballNbaScheduleUrl = statsUrlFormats.getBasketballScheduleUrl("20
 
 console.log(statsBasketballNbaScheduleUrl);
 
-console.log(statsUrlFormats.getBasketballLiveBoxUrl(1947369));
+console.log(statsUrlFormats.getBasketballLiveBoxUrl(1947563));
 

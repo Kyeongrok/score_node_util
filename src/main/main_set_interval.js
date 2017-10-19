@@ -14,9 +14,10 @@ const hello = (url) => request({
   },
   (error, response, body) => {
   if (!error && response.statusCode === 200) {
-  console.log(url);
-  console.log(body);
+  // console.log(url);
+  // console.log(body);
     console.log(response.headers);
+    console.log(response.elapsedTime);
 } else {
     try {
       console.log(`error${response.statusCode}`);
