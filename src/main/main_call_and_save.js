@@ -11,8 +11,8 @@ const printJson = (string) => {
   const boxscores = event.boxscores;
   // console.log(boxscores[0]);
   // console.log('homePlayerStat:%s awayPlayerStat:%s', boxscores[0].playerStat, boxscores[1].playerStat);
-  console.log(event.pbp.length);
-  console.log(event.pbp[event.pbp.length-1]);
+  console.log(event.pbp);
+  // console.log(event.pbp[event.pbp.length-1]);
 };
 
 const callAndPrint = request.getString(printJson);
@@ -22,5 +22,6 @@ const callAndPrint = request.getString(printJson);
 //   // 1947346, 1947369
 //   ()=>{}, 5000
 // });
-
-callAndPrint(statsUrlFormats.getBasketballLiveBoxUrl(1947346));
+const url = statsUrlFormats.getBasketballLiveBoxUrl(1947666);
+console.log(url);
+callAndPrint(url);
