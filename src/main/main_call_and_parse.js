@@ -1,13 +1,13 @@
 const fs = require('fs');
 const request = require('./request/request');
 const statsUrlFormats = require("./statsUrlFormats.js");
-
+const eventGetter = require('./getter/eventGetter');
 
 // fs.writeFile('test_data/hello.txt', string);
 const printJson = (string) => {
   console.log(string);
-  const json = JSON.parse(string);
-  const event = json.apiResults[0].league.season.eventType[0].events[0];
+
+  const event = eventGetter.getEvent(string);
   const boxscores = event.boxscores;
 
   const playerList = boxscores[0].playerStats.map(playerStat => playerStat.player);
