@@ -1,13 +1,10 @@
 const fs = require('fs');
 
 const fileListGetter = require('./getter/fileListGetter');
-const statsBasketballParser = require('./parser/statsBasketballParser');
 const statsBasketballPbpParser = require('./parser/statsBasketballPbpParser');
 
 const path = 'C:\\Users\\kyeongrok.kim\\Desktop\\score_data\\basketbtall_data\\2017-10-18';
-
 const list = fileListGetter.getFileList(path);
-
 
 // console.log(list.length);
 // const filteredList = list.filter(filename =>  filename.indexOf('14-01-') >= 0);
