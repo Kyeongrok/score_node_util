@@ -1,9 +1,7 @@
+exports.parse = (string) => {
+  const groupList = string.match(/sDt2\[([0-9]+)\]=(\[.+?\]);/g);
 
-const parse = (string) => {
-  console.log(string);
-}
-
-exports.parse = string => {
-  const group = string.match(/sDt2\[([0-9]+)\]=(\[.+?\]);/);
-  console.log(group[1] + ' ' + group[2]);
-}
+  const patternMatchedList = groupList.map(group => group.replace(/(sDt2)|[\[\];]/g, ''));
+  const filteredList = patternMatchedList.filter(item => item.indexOf('2917227') >= 0);
+  filteredList.forEach(item => console.log(item));
+};
