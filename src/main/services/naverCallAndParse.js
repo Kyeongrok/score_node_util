@@ -7,4 +7,3 @@ url = 'http://sportsdata.naver.com/data//kbl_game/2017/10/201710241050310121.nsd
 setInterval(() => {
   callAndParse.callAndParse(url)(string => console.log(string));
 }, 1000 * 1);
-
