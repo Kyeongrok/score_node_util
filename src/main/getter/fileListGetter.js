@@ -1,16 +1,15 @@
+/*
+  param1 path
+  return fileList
+ */
 const fs = require('fs');
 
-exports.getFileList = (path) =>{
+exports.getFileList = (path) => {
   const list = [];
   fs.readdirSync(path).forEach((fileName) => {
-
     list.push(fileName);
   });
 
   return list;
 };
-
-
-
-
 

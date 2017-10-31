@@ -12,9 +12,9 @@ const list = fileListGetter.getFileList(path);
 const filteredList = list.slice(0, 800);
 console.log('filteredList.length', filteredList.length);
 
-const pbpGetter = statsBasketballPbpParser.pbpGetter((pbp) => Number(pbp.playId) > 1177 && Number(pbp.playId) < 1180);
+const pbpGetter = statsBasketballPbpParser.pbpGetter(pbp => Number(pbp.playId) > 1177 && Number(pbp.playId) < 1180);
 
-filteredList.forEach(fileName =>{
+filteredList.forEach((fileName) => {
   const data = fs.readFileSync(`${path}/${fileName}`);
   const string = data.toString();
 
@@ -25,12 +25,8 @@ filteredList.forEach(fileName =>{
   const json = JSON.parse(string);
   const event = json.apiResults[0].league.season.eventType[0].events[0];
   console.log('eventTypeId %s, my callTime:%s startTimeStamp:%s endTimeStamp:%s'
-    ,event.eventStatus.eventStatusId
-    ,fileName.replace(/-/g, ':').replace('_live.json', ''),
+    , event.eventStatus.eventStatusId
+    , fileName.replace(/-/g, ':').replace('_live.json', ''),
     json.startTimestamp, json.endTimestamp);
 });
-
-
-
-
 
