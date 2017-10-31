@@ -1,19 +1,11 @@
 const statsUrlFormats = require('../statsUrlFormats.js');
 const callAndSave = require('../saver/callAndSave');
+const ymdhms = require('../getter/yyyy-mm-dd-hh-mm-ssGetter');
 
-const url = statsUrlFormats.getBasketballLiveBoxUrl(1948032);
-console.log(url);
-
-let i = 180;
-// setInterval(() => {
-//   i = i + 1;
-//   callAndSave.callAndSave(url)('./1948032' + i + '.js');
-// }, 5000);
-
-const getDate = () => {
-  const date = new Date();
-
-  return date;
-}
-
-getDate();
+setInterval(() => {
+  const statsGameId = 1948032;
+  const url = statsUrlFormats.getBasketballLiveBoxUrl(statsGameId);
+  console.log(url);
+  const fileName = `${ymdhms.ymdhms()}`;
+  callAndSave.callAndSave(url)(`./${fileName}^${statsGameId}.js`);
+}, 5000);
